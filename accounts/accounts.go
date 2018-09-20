@@ -20,7 +20,7 @@ package accounts
 import (
 	"math/big"
 
-	ethereum "github.com/blockchain/iMobileChain"
+	ethereum "github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/common"
 	"github.com/blockchain/imobilechain/core/types"
 	"github.com/blockchain/imobilechain/event"
