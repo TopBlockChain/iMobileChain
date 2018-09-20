@@ -21,7 +21,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain"
+	"github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/common"
 	"github.com/blockchain/imobilechain/core/types"
 )

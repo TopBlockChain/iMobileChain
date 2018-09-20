@@ -19,7 +19,7 @@ package shhclient
 import (
 	"context"
 
-	"github.com/blockchain/iMobileChain"
+	"github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/common/hexutil"
 	"github.com/blockchain/imobilechain/rpc"
 	whisper "github.com/blockchain/imobilechain/whisper/whisperv6"

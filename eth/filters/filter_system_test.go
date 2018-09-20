@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	ethereum "github.com/blockchain/iMobileChain"
+	ethereum "github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/common"
 	"github.com/blockchain/imobilechain/consensus/ethash"
 	"github.com/blockchain/imobilechain/core"

@@ -3,8 +3,8 @@ FROM golang:1.10-alpine as builder
 
 RUN apk add --no-cache make gcc musl-dev linux-headers
 
-ADD . /iMobileChain
-RUN cd /iMobileChain && make imc
+ADD . /imobilechain
+RUN cd /imobilechain && make imc
 
 # Pull Geth into a second stage deploy alpine container
 FROM alpine:latest

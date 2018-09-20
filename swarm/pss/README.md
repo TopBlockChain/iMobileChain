@@ -50,7 +50,7 @@ Due to the inherent properties of the `swarm` routing algorithm, a node may rece
 
 ## EXAMPLES
 
-The code tutorial [p2p programming in go-ethereum](https://github.com/nolash/iMobileChain-p2p-demo) by [@nolash](https://github.com/nolash) provides step-by-step code examples for usage of `pss` API with `go-ethereum` nodes.
+The code tutorial [p2p programming in go-ethereum](https://github.com/nolash/imobilechain-p2p-demo) by [@nolash](https://github.com/nolash) provides step-by-step code examples for usage of `pss` API with `go-ethereum` nodes.
 
 A quite unpolished example using `javascript` is available here: [https://github.com/nolash/pss-js/tree/withcrypt](https://github.com/nolash/pss-js/tree/withcrypt)
 

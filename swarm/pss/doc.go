@@ -26,7 +26,7 @@
 //
 // For the current state and roadmap of pss development please see https://github.com/ethersphere/swarm/wiki/swarm-dev-progress.
 //
-// Please report issues on https://github.com/ethersphere/iMobileChain
+// Please report issues on https://github.com/ethersphere/imobilechain
 //
 // Feel free to ask questions in https://gitter.im/ethersphere/pss
 //

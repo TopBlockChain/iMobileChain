@@ -19,7 +19,7 @@ package keystore
 import (
 	"math/big"
 
-	ethereum "github.com/blockchain/iMobileChain"
+	ethereum "github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/accounts"
 	"github.com/blockchain/imobilechain/core/types"
 )

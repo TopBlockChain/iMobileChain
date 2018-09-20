@@ -6,7 +6,7 @@ package contract
 import (
 	"strings"
 
-	ethereum "github.com/blockchain/iMobileChain"
+	ethereum "github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/accounts/abi"
 	"github.com/blockchain/imobilechain/accounts/abi/bind"
 	"github.com/blockchain/imobilechain/common"

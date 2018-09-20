@@ -1,4 +1,4 @@
-export ROOT="${GOPATH}/src/github.com/blockchain/iMobileChain"
+export ROOT="${GOPATH}/src/github.com/blockchain/imobilechain"
 export PATH="${ROOT}/swarm/dev/bin:${PATH}"
 
 cd "${ROOT}/swarm/dev"

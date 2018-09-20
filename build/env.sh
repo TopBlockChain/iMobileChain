@@ -11,7 +11,7 @@ fi
 workspace="$PWD/build/_workspace"
 root="$PWD"
 ethdir="$workspace/src/github.com/blockchain"
-if [ ! -L "$ethdir/iMobileChain" ]; then
+if [ ! -L "$ethdir/imobilechain" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
     ln -s ../../../../../. iMobileChain
@@ -23,8 +23,8 @@ GOPATH="$workspace"
 export GOPATH
 
 # Run the command inside the workspace.
-cd "$ethdir/iMobileChain"
-PWD="$ethdir/iMobileChain"
+cd "$ethdir/imobilechain"
+PWD="$ethdir/imobilechain"
 
 # Launch the arguments with the configured environment.
 exec "$@"

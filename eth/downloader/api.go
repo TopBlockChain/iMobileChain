@@ -20,7 +20,7 @@ import (
 	"context"
 	"sync"
 
-	ethereum "github.com/blockchain/iMobileChain"
+	ethereum "github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/event"
 	"github.com/blockchain/imobilechain/rpc"
 )

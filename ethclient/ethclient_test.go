@@ -16,7 +16,7 @@
 
 package ethclient
 
-import "github.com/blockchain/iMobileChain"
+import "github.com/blockchain/imobilechain"
 
 // Verify that Client implements the ethereum interfaces.
 var (

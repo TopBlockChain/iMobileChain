@@ -4,7 +4,7 @@
 
 Swarm is a distributed storage platform and content distribution service, a native base layer service of the ethereum web3 stack. The primary objective of Swarm is to provide a decentralized and redundant store for dapp code and data as well as block chain and state data. Swarm is also set out to provide various base layer services for web3, including node-to-node messaging, media streaming, decentralised database services and scalable state-channel infrastructure for decentralised service economies.
 
-[![Travis](https://travis-ci.org/blockchain/iMobileChain.svg?branch=master)](https://travis-ci.org/blockchain/iMobileChain)
+[![Travis](https://travis-ci.org/blockchain/imobilechain.svg?branch=master)](https://travis-ci.org/blockchain/imobilechain)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethersphere/orange-lounge?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Table of Contents
@@ -27,7 +27,7 @@ Swarm is a distributed storage platform and content distribution service, a nati
 
 Building Swarm requires Go (version 1.10 or later).
 
-    go get -d github.com/blockchain/iMobileChain
+    go get -d github.com/blockchain/imobilechain
 
     go install github.com/blockchain/imobilechain/cmd/swarm
 
@@ -90,12 +90,12 @@ Swarm documentation can be found at [https://swarm-guide.readthedocs.io](https:/
 
 We assume that you have Go v1.10 installed, and `GOPATH` is set.
 
-You must have your working copy under `$GOPATH/src/github.com/blockchain/iMobileChain`.
+You must have your working copy under `$GOPATH/src/github.com/blockchain/imobilechain`.
 
-Most likely you will be working from your fork of `go-ethereum`, let's say from `github.com/nirname/iMobileChain`. Clone or move your fork into the right place:
+Most likely you will be working from your fork of `go-ethereum`, let's say from `github.com/nirname/imobilechain`. Clone or move your fork into the right place:
 
 ```
-git clone git@github.com:nirname/iMobileChain.git $GOPATH/src/github.com/blockchain/iMobileChain
+git clone git@github.com:nirname/imobilechain.git $GOPATH/src/github.com/blockchain/imobilechain
 ```
 
 

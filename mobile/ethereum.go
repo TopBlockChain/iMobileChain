@@ -21,7 +21,7 @@ package geth
 import (
 	"errors"
 
-	ethereum "github.com/blockchain/iMobileChain"
+	ethereum "github.com/blockchain/imobilechain"
 	"github.com/blockchain/imobilechain/common"
 )
 
