@@ -86,7 +86,7 @@ organizations:
     mspid: DEFAULT
     # This org's MSP store (absolute path or relative to client.cryptoconfig)
     # if running in linux, you should change the char "\" to "/"
-    cryptoPath:  hyperledger\fabric\msp
+    cryptoPath:  ./hyperledger/fabric/msp
     # users:
     #     Admin:
     #         cert:
