@@ -22,9 +22,9 @@ import (
 	"io"
 	"unsafe"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 //go:generate gencodec -type Receipt -field-override receiptMarshaling -out gen_receipt_json.go

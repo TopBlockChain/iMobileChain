@@ -19,9 +19,9 @@ package rpc
 import (
 	"testing"
 
-	"github.com/blockchain/iMobileChain/rpc"
-	"github.com/blockchain/iMobileChain/swarm/storage/mock/mem"
-	"github.com/blockchain/iMobileChain/swarm/storage/mock/test"
+	"github.com/blockchain/imobilechain/rpc"
+	"github.com/blockchain/imobilechain/swarm/storage/mock/mem"
+	"github.com/blockchain/imobilechain/swarm/storage/mock/test"
 )
 
 // TestDBStore is running test for a GlobalStore

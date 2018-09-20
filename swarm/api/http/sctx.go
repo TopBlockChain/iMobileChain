@@ -3,8 +3,8 @@ package http
 import (
 	"context"
 
-	"github.com/blockchain/iMobileChain/swarm/api"
-	"github.com/blockchain/iMobileChain/swarm/sctx"
+	"github.com/blockchain/imobilechain/swarm/api"
+	"github.com/blockchain/imobilechain/swarm/sctx"
 )
 
 type contextKey int

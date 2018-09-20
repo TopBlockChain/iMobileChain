@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // journalEntry is a modification entry in the state change journal that can be

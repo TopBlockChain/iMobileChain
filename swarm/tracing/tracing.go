@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 	jaeger "github.com/uber/jaeger-client-go"
 	jaegercfg "github.com/uber/jaeger-client-go/config"
 	jaegerlog "github.com/uber/jaeger-client-go/log"

@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/consensus/ethash"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/core/vm"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/ethdb"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/consensus/ethash"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/core/vm"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/ethdb"
+	"github.com/blockchain/imobilechain/params"
 )
 
 func ExampleGenerateChain() {

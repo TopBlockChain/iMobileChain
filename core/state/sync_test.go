@@ -21,10 +21,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/ethdb"
-	"github.com/blockchain/iMobileChain/trie"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/ethdb"
+	"github.com/blockchain/imobilechain/trie"
 )
 
 // testAccount is the data associated with an account used by the state tests.

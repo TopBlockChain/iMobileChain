@@ -26,8 +26,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
 )
 
 var testAddrHex = "970e8128ab834e8eac17ab8e3812f010678cf791"

@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
 )
 
 //a map of mocker names to its function

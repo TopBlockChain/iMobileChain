@@ -24,8 +24,8 @@ import (
 
 	"strings"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/internal/debug"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/internal/debug"
 	"gopkg.in/urfave/cli.v1"
 )
 

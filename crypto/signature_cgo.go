@@ -23,8 +23,8 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/common/math"
-	"github.com/blockchain/iMobileChain/crypto/secp256k1"
+	"github.com/blockchain/imobilechain/common/math"
+	"github.com/blockchain/imobilechain/crypto/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

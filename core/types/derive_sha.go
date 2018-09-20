@@ -19,9 +19,9 @@ package types
 import (
 	"bytes"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/rlp"
-	"github.com/blockchain/iMobileChain/trie"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/rlp"
+	"github.com/blockchain/imobilechain/trie"
 )
 
 type DerivableList interface {

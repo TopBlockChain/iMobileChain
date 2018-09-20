@@ -20,11 +20,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/accounts/abi/bind"
-	"github.com/blockchain/iMobileChain/accounts/abi/bind/backends"
-	"github.com/blockchain/iMobileChain/contracts/ens/contract"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/accounts/abi/bind"
+	"github.com/blockchain/imobilechain/accounts/abi/bind/backends"
+	"github.com/blockchain/imobilechain/contracts/ens/contract"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 var (

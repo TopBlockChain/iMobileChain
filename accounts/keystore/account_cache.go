@@ -28,9 +28,9 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // Minimum amount of time between cache reloads. This limit applies if the platform does

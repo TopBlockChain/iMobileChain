@@ -19,9 +19,9 @@ package core
 import (
 	"container/list"
 
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/ethdb"
-	"github.com/blockchain/iMobileChain/event"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/ethdb"
+	"github.com/blockchain/imobilechain/event"
 )
 
 // Implement our EthTest Manager

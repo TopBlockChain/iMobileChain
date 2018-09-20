@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 type TestPeer interface {

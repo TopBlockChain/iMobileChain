@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // ContractRef is a reference to the contract's backing object

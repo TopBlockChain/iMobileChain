@@ -21,11 +21,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/accounts/abi"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/vm"
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/accounts/abi"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/vm"
+	"github.com/blockchain/imobilechain/ethdb"
 )
 
 func TestDefaults(t *testing.T) {

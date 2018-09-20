@@ -40,7 +40,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 var dumpEnc bool

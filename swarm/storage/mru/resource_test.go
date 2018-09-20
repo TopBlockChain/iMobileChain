@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/contracts/ens"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/swarm/chunk"
-	"github.com/blockchain/iMobileChain/swarm/multihash"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/contracts/ens"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/swarm/chunk"
+	"github.com/blockchain/imobilechain/swarm/multihash"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 var (

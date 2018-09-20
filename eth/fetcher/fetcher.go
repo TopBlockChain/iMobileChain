@@ -22,11 +22,11 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/prque"
-	"github.com/blockchain/iMobileChain/consensus"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/prque"
+	"github.com/blockchain/imobilechain/consensus"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/log"
 )
 
 const (

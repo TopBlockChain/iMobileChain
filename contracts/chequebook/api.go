@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 const Version = "1.0"

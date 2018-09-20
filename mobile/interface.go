@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // Interface represents a wrapped version of Go's interface{}, with the capacity

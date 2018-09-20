@@ -27,12 +27,12 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/dashboard"
-	"github.com/blockchain/iMobileChain/eth"
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/params"
-	whisper "github.com/blockchain/iMobileChain/whisper/whisperv6"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/dashboard"
+	"github.com/blockchain/imobilechain/eth"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/params"
+	whisper "github.com/blockchain/imobilechain/whisper/whisperv6"
 	"github.com/naoina/toml"
 )
 

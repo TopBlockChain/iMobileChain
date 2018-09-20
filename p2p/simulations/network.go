@@ -24,11 +24,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/event"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/event"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
 )
 
 var DialBanTimeout = 200 * time.Millisecond

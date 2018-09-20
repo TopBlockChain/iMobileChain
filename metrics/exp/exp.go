@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/metrics"
+	"github.com/blockchain/imobilechain/metrics"
 )
 
 type exp struct {

@@ -23,9 +23,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/swarm/api"
-	"github.com/blockchain/iMobileChain/swarm/api/client"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/swarm/api"
+	"github.com/blockchain/imobilechain/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations"
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations"
+	"github.com/blockchain/imobilechain/swarm/log"
 )
 
 var (
@@ -43,7 +43,7 @@ var (
 //It also provides a documentation on the steps needed by frontends
 //to use the simulations
 func TestOverlaySim(t *testing.T) {
-	t.Skip("Test is flaky, see: https://github.com/ethersphere/iMobileChain/issues/592")
+	t.Skip("Test is flaky, see: https://github.com/ethersphere/imobilechain/issues/592")
 	//start the simulation
 	log.Info("Start simulation backend")
 	//get the simulation networ; needed to subscribe for up events

@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 	"github.com/stretchr/testify/require"
 )
 

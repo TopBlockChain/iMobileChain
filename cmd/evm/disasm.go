@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/core/asm"
+	"github.com/blockchain/imobilechain/core/asm"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

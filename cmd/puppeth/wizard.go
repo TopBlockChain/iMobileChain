@@ -30,9 +30,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

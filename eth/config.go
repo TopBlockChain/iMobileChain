@@ -24,13 +24,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/consensus/ethash"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/eth/downloader"
-	"github.com/blockchain/iMobileChain/eth/gasprice"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/consensus/ethash"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/eth/downloader"
+	"github.com/blockchain/imobilechain/eth/gasprice"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.

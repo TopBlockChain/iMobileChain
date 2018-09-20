@@ -26,8 +26,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/crypto/sha3"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/crypto/sha3"
 )
 
 // Lengths of hashes and addresses in bytes.

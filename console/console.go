@@ -28,9 +28,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/blockchain/iMobileChain/internal/jsre"
-	"github.com/blockchain/iMobileChain/internal/web3ext"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/internal/jsre"
+	"github.com/blockchain/imobilechain/internal/web3ext"
+	"github.com/blockchain/imobilechain/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 	"github.com/robertkrimen/otto"

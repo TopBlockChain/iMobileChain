@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // Tests that ethash works correctly in test mode.
@@ -55,7 +55,7 @@ func TestTestMode(t *testing.T) {
 }
 
 // This test checks that cache lru logic doesn't crash under load.
-// It reproduces https://github.com/blockchain/iMobileChain/issues/14943
+// It reproduces https://github.com/blockchain/imobilechain/issues/14943
 func TestCacheFileEvict(t *testing.T) {
 	tmpdir, err := ioutil.TempDir("", "ethash-test")
 	if err != nil {

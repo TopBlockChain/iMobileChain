@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/event"
+	"github.com/blockchain/imobilechain/event"
 )
 
 func ExampleFeed_acknowledgedEvents() {

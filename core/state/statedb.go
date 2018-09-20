@@ -23,12 +23,12 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/rlp"
-	"github.com/blockchain/iMobileChain/trie"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/rlp"
+	"github.com/blockchain/imobilechain/trie"
 )
 
 type revision struct {
@@ -471,7 +471,7 @@ func (self *StateDB) Copy() *StateDB {
 	}
 	// Copy the dirty states, logs, and preimages
 	for addr := range self.journal.dirties {
-		// As documented [here](https://github.com/blockchain/iMobileChain/pull/16485#issuecomment-380438527),
+		// As documented [here](https://github.com/blockchain/imobilechain/pull/16485#issuecomment-380438527),
 		// and in the Finalise-method, there is a case where an object is in the journal but not
 		// in the stateObjects: OOG after touch on ripeMD prior to Byzantium. Thus, we need to check for
 		// nil

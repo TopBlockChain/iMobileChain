@@ -29,8 +29,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
-	ch "github.com/blockchain/iMobileChain/swarm/chunk"
+	"github.com/blockchain/imobilechain/log"
+	ch "github.com/blockchain/imobilechain/swarm/chunk"
 	colorable "github.com/mattn/go-colorable"
 )
 

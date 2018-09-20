@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/log"
 )
 
 // SwAP Swarm Accounting Protocol with

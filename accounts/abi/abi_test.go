@@ -27,8 +27,8 @@ import (
 
 	"reflect"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 const jsondata = `

@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/crypto/sha3"
-	p2ptest "github.com/blockchain/iMobileChain/p2p/testing"
+	"github.com/blockchain/imobilechain/crypto/sha3"
+	p2ptest "github.com/blockchain/imobilechain/p2p/testing"
 )
 
 func TestStreamerSubscribe(t *testing.T) {

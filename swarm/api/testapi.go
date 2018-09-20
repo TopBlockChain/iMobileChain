@@ -17,7 +17,7 @@
 package api
 
 import (
-	"github.com/blockchain/iMobileChain/swarm/network"
+	"github.com/blockchain/imobilechain/swarm/network"
 )
 
 type Control struct {

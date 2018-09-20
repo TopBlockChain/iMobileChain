@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/common/math"
-	"github.com/blockchain/iMobileChain/core/vm"
+	"github.com/blockchain/imobilechain/common/math"
+	"github.com/blockchain/imobilechain/core/vm"
 )
 
 // Compiler contains information about the parsed source

@@ -25,7 +25,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // ethstatsDockerfile is the Dockerfile required to build an ethstats backend

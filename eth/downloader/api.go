@@ -21,8 +21,8 @@ import (
 	"sync"
 
 	ethereum "github.com/blockchain/iMobileChain"
-	"github.com/blockchain/iMobileChain/event"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/event"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

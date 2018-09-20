@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

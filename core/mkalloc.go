@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 type allocItem struct{ Addr, Balance *big.Int }

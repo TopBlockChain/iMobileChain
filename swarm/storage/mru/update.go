@@ -20,9 +20,9 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/blockchain/iMobileChain/swarm/chunk"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	"github.com/blockchain/iMobileChain/swarm/multihash"
+	"github.com/blockchain/imobilechain/swarm/chunk"
+	"github.com/blockchain/imobilechain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/multihash"
 )
 
 // resourceUpdate encapsulates the information sent as part of a resource update

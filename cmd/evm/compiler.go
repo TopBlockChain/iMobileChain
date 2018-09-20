@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/blockchain/iMobileChain/cmd/evm/internal/compiler"
+	"github.com/blockchain/imobilechain/cmd/evm/internal/compiler"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

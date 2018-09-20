@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/blockchain/iMobileChain/accounts/keystore"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/accounts/keystore"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // deployNode creates a new node configuration based on some user input.

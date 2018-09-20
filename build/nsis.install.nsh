@@ -3,8 +3,8 @@ InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/blockchain/iMobileChain/issues"
-!define UPDATEURL "https://github.com/blockchain/iMobileChain/releases"
+!define HELPURL "https://github.com/blockchain/imobilechain/issues"
+!define UPDATEURL "https://github.com/blockchain/imobilechain/releases"
 !define ABOUTURL "https://github.com/blockchain/iMobileChain#ethereum-go"
 !define /date NOW "%Y%m%d"
 

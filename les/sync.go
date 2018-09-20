@@ -20,9 +20,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/blockchain/iMobileChain/core/rawdb"
-	"github.com/blockchain/iMobileChain/eth/downloader"
-	"github.com/blockchain/iMobileChain/light"
+	"github.com/blockchain/imobilechain/core/rawdb"
+	"github.com/blockchain/imobilechain/eth/downloader"
+	"github.com/blockchain/imobilechain/light"
 )
 
 // syncer is responsible for periodically synchronising with the network, both

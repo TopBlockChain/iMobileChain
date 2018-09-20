@@ -22,8 +22,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	swarm "github.com/blockchain/iMobileChain/swarm/api/client"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	swarm "github.com/blockchain/imobilechain/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

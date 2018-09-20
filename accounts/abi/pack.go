@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/math"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/math"
 )
 
 // packBytesSlice packs the given bytes as [L, V] as the canonical representation

@@ -5,7 +5,7 @@ package whisperv5
 import (
 	"encoding/json"
 
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/hexutil"
 )
 
 var _ = (*newMessageOverride)(nil)

@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common/mclock"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/common/mclock"
+	"github.com/blockchain/imobilechain/log"
 )
 
 const (

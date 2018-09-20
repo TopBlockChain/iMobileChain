@@ -21,9 +21,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/internal/ethapi"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/internal/ethapi"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 type StdIOUI struct {

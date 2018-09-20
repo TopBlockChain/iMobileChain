@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/eth/downloader"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/eth/downloader"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 // Tests that fast sync gets disabled as soon as a real block is successfully

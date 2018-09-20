@@ -35,11 +35,11 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/metrics"
-	"github.com/blockchain/iMobileChain/rlp"
-	ch "github.com/blockchain/iMobileChain/swarm/chunk"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	"github.com/blockchain/iMobileChain/swarm/storage/mock"
+	"github.com/blockchain/imobilechain/metrics"
+	"github.com/blockchain/imobilechain/rlp"
+	ch "github.com/blockchain/imobilechain/swarm/chunk"
+	"github.com/blockchain/imobilechain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/storage/mock"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 )

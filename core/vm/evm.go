@@ -21,9 +21,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // emptyCodeHash is used by create to ensure deployment is disallowed to already

@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/accounts/keystore"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/accounts/keystore"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // Tests that the account management snippets work correctly.

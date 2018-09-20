@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/rpc"
-	"github.com/blockchain/iMobileChain/swarm"
-	"github.com/blockchain/iMobileChain/swarm/api"
+	"github.com/blockchain/imobilechain/rpc"
+	"github.com/blockchain/imobilechain/swarm"
+	"github.com/blockchain/imobilechain/swarm/api"
 
 	"github.com/docker/docker/pkg/reexec"
 )

@@ -21,11 +21,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/eth/downloader"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/eth/downloader"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 const (

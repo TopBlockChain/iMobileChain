@@ -22,9 +22,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/console"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/console"
+	"github.com/blockchain/imobilechain/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

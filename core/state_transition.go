@@ -21,10 +21,10 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/vm"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/vm"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/params"
 )
 
 var (

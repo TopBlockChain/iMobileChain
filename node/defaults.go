@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/nat"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/nat"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 const (

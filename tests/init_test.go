@@ -29,7 +29,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/params"
 )
 
 var (

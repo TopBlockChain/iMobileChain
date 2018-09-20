@@ -22,15 +22,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/consensus"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/eth/downloader"
-	"github.com/blockchain/iMobileChain/event"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/consensus"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/eth/downloader"
+	"github.com/blockchain/imobilechain/event"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // Backend wraps all methods required for mining.

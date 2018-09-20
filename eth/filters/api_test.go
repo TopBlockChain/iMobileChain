@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 func TestUnmarshalJSONNewFilterArgs(t *testing.T) {

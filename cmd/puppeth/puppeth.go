@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -26,8 +26,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/internal/jsre/deps"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/internal/jsre/deps"
 	"github.com/robertkrimen/otto"
 )
 

@@ -25,11 +25,11 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/accounts/abi/bind"
-	"github.com/blockchain/iMobileChain/accounts/abi/bind/backends"
-	"github.com/blockchain/iMobileChain/contracts/chequebook/contract"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/accounts/abi/bind"
+	"github.com/blockchain/imobilechain/accounts/abi/bind/backends"
+	"github.com/blockchain/imobilechain/contracts/chequebook/contract"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 var (

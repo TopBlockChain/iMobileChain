@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/blockchain/iMobileChain/accounts/abi"
+import "github.com/blockchain/imobilechain/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {

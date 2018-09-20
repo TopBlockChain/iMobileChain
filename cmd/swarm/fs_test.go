@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 	colorable "github.com/mattn/go-colorable"
 )
 

@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 	"golang.org/x/tools/imports"
 )
 

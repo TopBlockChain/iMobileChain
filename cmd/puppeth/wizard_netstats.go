@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/log"
 	"github.com/olekukonko/tablewriter"
 )
 

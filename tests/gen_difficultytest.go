@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/math"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/math"
 )
 
 var _ = (*difficultyTestMarshaling)(nil)

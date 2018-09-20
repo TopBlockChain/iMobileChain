@@ -20,9 +20,9 @@ import (
 	"context"
 
 	"github.com/blockchain/iMobileChain"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/rpc"
-	whisper "github.com/blockchain/iMobileChain/whisper/whisperv6"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/rpc"
+	whisper "github.com/blockchain/imobilechain/whisper/whisperv6"
 )
 
 // Client defines typed wrappers for the Whisper v6 RPC API.

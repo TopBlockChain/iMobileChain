@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // Gas costs

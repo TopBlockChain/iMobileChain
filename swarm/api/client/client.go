@@ -34,8 +34,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/swarm/api"
-	"github.com/blockchain/iMobileChain/swarm/storage/mru"
+	"github.com/blockchain/imobilechain/swarm/api"
+	"github.com/blockchain/imobilechain/swarm/storage/mru"
 )
 
 var (

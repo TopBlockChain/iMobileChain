@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // Enabled is checked by the constructor functions for all of the

@@ -24,8 +24,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/swarm/log"
 
 	lru "github.com/hashicorp/golang-lru"
 )

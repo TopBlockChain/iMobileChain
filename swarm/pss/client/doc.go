@@ -28,11 +28,11 @@
 //  	"context"
 //  	"fmt"
 //  	"os"
-//  	pss "github.com/blockchain/iMobileChain/swarm/pss/client"
-//  	"github.com/blockchain/iMobileChain/p2p/protocols"
-//  	"github.com/blockchain/iMobileChain/p2p"
-//  	"github.com/blockchain/iMobileChain/swarm/pot"
-//  	"github.com/blockchain/iMobileChain/swarm/log"
+//  	pss "github.com/blockchain/imobilechain/swarm/pss/client"
+//  	"github.com/blockchain/imobilechain/p2p/protocols"
+//  	"github.com/blockchain/imobilechain/p2p"
+//  	"github.com/blockchain/imobilechain/swarm/pot"
+//  	"github.com/blockchain/imobilechain/swarm/log"
 //  )
 //
 //  type FooMsg struct {

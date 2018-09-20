@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/core/vm"
+	"github.com/blockchain/imobilechain/core/vm"
 )
 
 func TestState(t *testing.T) {

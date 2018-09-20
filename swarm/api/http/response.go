@@ -24,9 +24,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/metrics"
-	"github.com/blockchain/iMobileChain/swarm/api"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/metrics"
+	"github.com/blockchain/imobilechain/swarm/api"
 )
 
 var (

@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"hash"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 // SignedResourceUpdate represents a resource update with all the necessary information to prove ownership of the resource

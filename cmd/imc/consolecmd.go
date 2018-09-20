@@ -24,10 +24,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/console"
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/console"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -43,7 +43,7 @@ var (
 		Description: `
 The Geth console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/blockchain/iMobileChain/wiki/JavaScript-Console.`,
+See https://github.com/blockchain/imobilechain/wiki/JavaScript-Console.`,
 	}
 
 	attachCommand = cli.Command{
@@ -56,7 +56,7 @@ See https://github.com/blockchain/iMobileChain/wiki/JavaScript-Console.`,
 		Description: `
 The Geth console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/blockchain/iMobileChain/wiki/JavaScript-Console.
+See https://github.com/blockchain/imobilechain/wiki/JavaScript-Console.
 This command allows to open a console on a running geth node.`,
 	}
 
@@ -69,7 +69,7 @@ This command allows to open a console on a running geth node.`,
 		Category:  "CONSOLE COMMANDS",
 		Description: `
 The JavaScript VM exposes a node admin interface as well as the Ðapp
-JavaScript API. See https://github.com/blockchain/iMobileChain/wiki/JavaScript-Console`,
+JavaScript API. See https://github.com/blockchain/imobilechain/wiki/JavaScript-Console`,
 	}
 )
 

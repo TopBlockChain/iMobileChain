@@ -19,7 +19,7 @@ package mem
 import (
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/storage/mock/test"
+	"github.com/blockchain/imobilechain/swarm/storage/mock/test"
 )
 
 // TestGlobalStore is running test for a GlobalStore

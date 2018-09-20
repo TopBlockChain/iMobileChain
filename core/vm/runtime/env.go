@@ -17,9 +17,9 @@
 package runtime
 
 import (
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/core/vm"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

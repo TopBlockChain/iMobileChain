@@ -20,8 +20,8 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/blockchain/iMobileChain/crypto/sha3"
-	"github.com/blockchain/iMobileChain/swarm/storage/encryption"
+	"github.com/blockchain/imobilechain/crypto/sha3"
+	"github.com/blockchain/imobilechain/swarm/storage/encryption"
 )
 
 type RefEncryption struct {

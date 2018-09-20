@@ -22,10 +22,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

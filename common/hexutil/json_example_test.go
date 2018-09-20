@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/hexutil"
 )
 
 type MyType [5]byte

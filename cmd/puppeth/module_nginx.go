@@ -24,7 +24,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // nginxDockerfile is theis the Dockerfile required to build an nginx reverse-

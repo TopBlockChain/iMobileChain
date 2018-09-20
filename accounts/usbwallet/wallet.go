@@ -26,10 +26,10 @@ import (
 	"time"
 
 	ethereum "github.com/blockchain/iMobileChain"
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/log"
 	"github.com/karalabe/hid"
 )
 

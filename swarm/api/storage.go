@@ -20,7 +20,7 @@ import (
 	"context"
 	"path"
 
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 type Response struct {

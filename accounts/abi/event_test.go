@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -323,7 +323,7 @@ func unpackTestEventData(dest interface{}, hexData string, jsonEvent []byte, ass
 
 /*
 Taken from
-https://github.com/blockchain/iMobileChain/pull/15568
+https://github.com/blockchain/imobilechain/pull/15568
 */
 
 type testResult struct {

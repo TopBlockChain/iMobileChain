@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common/mclock"
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/common/mclock"
+	"github.com/blockchain/imobilechain/ethdb"
 )
 
 func TestFreeClientPoolL10C100(t *testing.T) {

@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/consensus/ethash"
-	"github.com/blockchain/iMobileChain/eth"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/consensus/ethash"
+	"github.com/blockchain/imobilechain/eth"
+	"github.com/blockchain/imobilechain/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

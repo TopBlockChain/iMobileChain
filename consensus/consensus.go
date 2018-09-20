@@ -20,11 +20,11 @@ package consensus
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/params"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/params"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 // ChainReader defines a small collection of methods needed to access the local

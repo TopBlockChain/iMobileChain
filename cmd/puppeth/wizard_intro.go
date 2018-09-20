@@ -26,7 +26,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // makeWizard creates and returns a new puppeth wizard.

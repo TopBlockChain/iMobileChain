@@ -22,8 +22,8 @@ package node
 import (
 	"reflect"
 
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 // NoopService is a trivial implementation of the Service interface.

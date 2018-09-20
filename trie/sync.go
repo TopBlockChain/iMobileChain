@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/prque"
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/prque"
+	"github.com/blockchain/imobilechain/ethdb"
 )
 
 // ErrNotRequested is returned by the trie sync when it's requested to process a

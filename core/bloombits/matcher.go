@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common/bitutil"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/common/bitutil"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 // bloomIndexes represents the bit indexes inside the bloom filter that belong

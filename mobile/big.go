@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

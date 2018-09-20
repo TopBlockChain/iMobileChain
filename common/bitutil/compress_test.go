@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/hexutil"
 )
 
 // Tests that data bitset encoding and decoding works and is bijective.

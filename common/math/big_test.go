@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 func TestHexOrDecimal256(t *testing.T) {

@@ -36,7 +36,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // ErrNotFound indicates that the chunk is not found.

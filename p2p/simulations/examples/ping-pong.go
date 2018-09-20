@@ -25,13 +25,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 var adapterType = flag.String("adapter", "sim", `node adapter to use (one of "sim", "exec" or "docker")`)

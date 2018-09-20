@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/blockchain/iMobileChain/core/vm"
+	"github.com/blockchain/imobilechain/core/vm"
 )
 
 func TestVM(t *testing.T) {

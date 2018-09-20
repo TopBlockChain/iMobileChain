@@ -20,8 +20,8 @@ import (
 	"math/big"
 
 	ethereum "github.com/blockchain/iMobileChain"
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // keystoreWallet implements the accounts.Wallet interface for the original

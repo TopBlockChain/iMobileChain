@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/core/asm"
+	"github.com/blockchain/imobilechain/core/asm"
 )
 
 func Compile(fn string, src []byte, debug bool) (string, error) {

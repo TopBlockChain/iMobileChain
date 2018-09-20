@@ -17,7 +17,7 @@
 // Package bind generates Ethereum contract Go bindings.
 //
 // Detailed usage document and tutorial available on the go-ethereum Wiki page:
-// https://github.com/blockchain/iMobileChain/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
+// https://github.com/blockchain/imobilechain/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
 package bind
 
 import (
@@ -28,7 +28,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/blockchain/iMobileChain/accounts/abi"
+	"github.com/blockchain/imobilechain/accounts/abi"
 	"golang.org/x/tools/imports"
 )
 

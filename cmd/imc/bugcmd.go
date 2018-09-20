@@ -26,10 +26,10 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/cmd/internal/browser"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/cmd/internal/browser"
+	"github.com/blockchain/imobilechain/params"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
+	"github.com/blockchain/imobilechain/cmd/utils"
 	cli "gopkg.in/urfave/cli.v1"
 )
 
@@ -41,7 +41,7 @@ var bugCommand = cli.Command{
 	Category:  "MISCELLANEOUS COMMANDS",
 }
 
-const issueURL = "https://github.com/blockchain/iMobileChain/issues/new"
+const issueURL = "https://github.com/blockchain/imobilechain/issues/new"
 
 // reportBug reports a bug by opening a new URL to the go-ethereum GH issue
 // tracker and setting default values as the issue body.

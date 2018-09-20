@@ -23,10 +23,10 @@ import (
 	"io"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/metrics"
-	ch "github.com/blockchain/iMobileChain/swarm/chunk"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	"github.com/blockchain/iMobileChain/swarm/spancontext"
+	"github.com/blockchain/imobilechain/metrics"
+	ch "github.com/blockchain/imobilechain/swarm/chunk"
+	"github.com/blockchain/imobilechain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/spancontext"
 	opentracing "github.com/opentracing/opentracing-go"
 	olog "github.com/opentracing/opentracing-go/log"
 )
@@ -89,7 +89,7 @@ type JoinerParams struct {
 	ChunkerParams
 	addr   Address
 	getter Getter
-	// TODO: there is a bug, so depth can only be 0 today, see: https://github.com/ethersphere/iMobileChain/issues/344
+	// TODO: there is a bug, so depth can only be 0 today, see: https://github.com/ethersphere/imobilechain/issues/344
 	depth int
 	ctx   context.Context
 }

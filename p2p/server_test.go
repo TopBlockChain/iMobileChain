@@ -25,10 +25,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/crypto/sha3"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/crypto/sha3"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 func init() {

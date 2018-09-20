@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // explorerDockerfile is the Dockerfile required to run a block explorer.

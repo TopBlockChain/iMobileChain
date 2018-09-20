@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/event"
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/event"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 // testService implements the node.Service interface and provides protocols

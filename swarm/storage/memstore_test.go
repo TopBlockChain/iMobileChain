@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/log"
 )
 
 func newTestMemStore() *MemStore {

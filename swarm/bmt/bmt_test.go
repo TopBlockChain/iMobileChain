@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/crypto/sha3"
+	"github.com/blockchain/imobilechain/crypto/sha3"
 )
 
 // the actual data length generated (could be longer than max datalength of the BMT)

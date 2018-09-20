@@ -29,13 +29,13 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/node"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/node"
 	"github.com/naoina/toml"
 
-	bzzapi "github.com/blockchain/iMobileChain/swarm/api"
+	bzzapi "github.com/blockchain/imobilechain/swarm/api"
 )
 
 var (
@@ -93,7 +93,7 @@ var tomlSettings = toml.Config{
 	MissingField: func(rt reflect.Type, field string) error {
 		link := ""
 		if unicode.IsUpper(rune(rt.Name()[0])) && rt.PkgPath() != "main" {
-			link = fmt.Sprintf(", check github.com/blockchain/iMobileChain/swarm/api/config.go for available fields")
+			link = fmt.Sprintf(", check github.com/blockchain/imobilechain/swarm/api/config.go for available fields")
 		}
 		return fmt.Errorf("field '%s' is not defined in %s%s", field, rt.String(), link)
 	},

@@ -25,15 +25,15 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/accounts/keystore"
-	"github.com/blockchain/iMobileChain/accounts/usbwallet"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/internal/ethapi"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/accounts/keystore"
+	"github.com/blockchain/imobilechain/accounts/usbwallet"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/internal/ethapi"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 // ExternalAPI defines the external API through which signing requests are made.
@@ -374,7 +374,7 @@ func (api *SignerAPI) SignTransaction(ctx context.Context, args SendTxArgs, meth
 //
 // The key used to calculate the signature is decrypted with the given password.
 //
-// https://github.com/blockchain/iMobileChain/wiki/Management-APIs#personal_sign
+// https://github.com/blockchain/imobilechain/wiki/Management-APIs#personal_sign
 func (api *SignerAPI) Sign(ctx context.Context, addr common.MixedcaseAddress, data hexutil.Bytes) (hexutil.Bytes, error) {
 	sighash, msg := SignHash(data)
 	// We make the request prior to looking up if we actually have the account, to prevent
@@ -413,7 +413,7 @@ func (api *SignerAPI) Sign(ctx context.Context, addr common.MixedcaseAddress, da
 // Note, the signature must conform to the secp256k1 curve R, S and V values, where
 // the V value must be be 27 or 28 for legacy reasons.
 //
-// https://github.com/blockchain/iMobileChain/wiki/Management-APIs#personal_ecRecover
+// https://github.com/blockchain/imobilechain/wiki/Management-APIs#personal_ecRecover
 func (api *SignerAPI) EcRecover(ctx context.Context, data, sig hexutil.Bytes) (common.Address, error) {
 	if len(sig) != 65 {
 		return common.Address{}, fmt.Errorf("signature must be 65 bytes long")

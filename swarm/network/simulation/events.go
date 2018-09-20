@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/discover"
 
-	"github.com/blockchain/iMobileChain/p2p"
+	"github.com/blockchain/imobilechain/p2p"
 )
 
 // PeerEvent is the type of the channel returned by Simulation.PeerEvents.

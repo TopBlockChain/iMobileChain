@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

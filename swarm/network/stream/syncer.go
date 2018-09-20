@@ -22,9 +22,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/blockchain/iMobileChain/metrics"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/metrics"
+	"github.com/blockchain/imobilechain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 const (

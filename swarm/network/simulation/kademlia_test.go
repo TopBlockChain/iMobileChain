@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
-	"github.com/blockchain/iMobileChain/swarm/network"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/swarm/network"
 )
 
 func TestWaitTillHealthy(t *testing.T) {

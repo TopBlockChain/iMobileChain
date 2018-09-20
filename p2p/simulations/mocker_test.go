@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 func TestMocker(t *testing.T) {

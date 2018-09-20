@@ -19,7 +19,7 @@ package network
 import (
 	"testing"
 
-	p2ptest "github.com/blockchain/iMobileChain/p2p/testing"
+	p2ptest "github.com/blockchain/imobilechain/p2p/testing"
 )
 
 /***

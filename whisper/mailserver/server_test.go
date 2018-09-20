@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
-	whisper "github.com/blockchain/iMobileChain/whisper/whisperv6"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
+	whisper "github.com/blockchain/imobilechain/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

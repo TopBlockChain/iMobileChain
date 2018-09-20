@@ -27,15 +27,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
-	p2ptest "github.com/blockchain/iMobileChain/p2p/testing"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	"github.com/blockchain/iMobileChain/swarm/network"
-	"github.com/blockchain/iMobileChain/swarm/network/simulation"
-	"github.com/blockchain/iMobileChain/swarm/state"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
+	p2ptest "github.com/blockchain/imobilechain/p2p/testing"
+	"github.com/blockchain/imobilechain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/network"
+	"github.com/blockchain/imobilechain/swarm/network/simulation"
+	"github.com/blockchain/imobilechain/swarm/state"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 func TestStreamerRetrieveRequest(t *testing.T) {

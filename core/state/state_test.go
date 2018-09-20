@@ -21,9 +21,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/ethdb"
 	checker "gopkg.in/check.v1"
 )
 

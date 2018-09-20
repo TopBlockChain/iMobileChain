@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // deployEthstats queries the user for various input on deploying an ethstats

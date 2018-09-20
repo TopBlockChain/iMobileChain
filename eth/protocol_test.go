@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/eth/downloader"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/eth/downloader"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 func init() {

@@ -37,9 +37,9 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/math"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/math"
+	"github.com/blockchain/imobilechain/crypto"
 	"github.com/pborman/uuid"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"

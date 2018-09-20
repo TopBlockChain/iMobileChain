@@ -28,10 +28,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/rpc"
-	"github.com/blockchain/iMobileChain/swarm/api"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/rpc"
+	"github.com/blockchain/imobilechain/swarm/api"
 )
 
 // TestNewSwarm validates Swarm fields in repsect to the provided configuration.
@@ -332,7 +332,7 @@ func TestLocalStoreAndRetrieve(t *testing.T) {
 // a file of length n with optional random data using API Store function,
 // and checks the output of API Retrieve function on the same instance.
 // This is a regression test for issue
-// https://github.com/ethersphere/iMobileChain/issues/639
+// https://github.com/ethersphere/imobilechain/issues/639
 // where pyramid chunker did not split correctly files with lengths that
 // are edge cases for chunk and tree parameters, depending whether there
 // is a tree chunk with only one data chunk and how the compress functionality

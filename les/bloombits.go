@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/blockchain/iMobileChain/common/bitutil"
-	"github.com/blockchain/iMobileChain/light"
+	"github.com/blockchain/imobilechain/common/bitutil"
+	"github.com/blockchain/imobilechain/light"
 )
 
 const (

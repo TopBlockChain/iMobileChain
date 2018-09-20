@@ -21,9 +21,9 @@ import (
 	"math/big"
 
 	ethereum "github.com/blockchain/iMobileChain"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/event"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/event"
 )
 
 // Account represents an Ethereum account located at a specific location defined

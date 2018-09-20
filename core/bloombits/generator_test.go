@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // Tests that batched bloom bits are correctly rotated from the input bloom

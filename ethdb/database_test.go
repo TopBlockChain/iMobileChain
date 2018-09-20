@@ -25,7 +25,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/ethdb"
 )
 
 func newTestLDB() (*ethdb.LDBDatabase, func()) {

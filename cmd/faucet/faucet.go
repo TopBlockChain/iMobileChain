@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/accounts/keystore"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/eth"
-	"github.com/blockchain/iMobileChain/eth/downloader"
-	"github.com/blockchain/iMobileChain/ethclient"
-	"github.com/blockchain/iMobileChain/ethstats"
-	"github.com/blockchain/iMobileChain/les"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/discv5"
-	"github.com/blockchain/iMobileChain/p2p/nat"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/accounts/keystore"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/eth"
+	"github.com/blockchain/imobilechain/eth/downloader"
+	"github.com/blockchain/imobilechain/ethclient"
+	"github.com/blockchain/imobilechain/ethstats"
+	"github.com/blockchain/imobilechain/les"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/discv5"
+	"github.com/blockchain/imobilechain/p2p/nat"
+	"github.com/blockchain/imobilechain/params"
 	"golang.org/x/net/websocket"
 )
 
@@ -448,7 +448,7 @@ func (f *faucet) apiHandler(conn *websocket.Conn) {
 		case *noauthFlag:
 			username, avatar, address, err = authNoAuth(msg.URL)
 		default:
-			err = errors.New("Something funky happened, please open an issue at https://github.com/blockchain/iMobileChain/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/blockchain/imobilechain/issues")
 		}
 		if err != nil {
 			if err = sendError(conn, err); err != nil {

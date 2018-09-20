@@ -23,10 +23,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/rlp"
-	whisper "github.com/blockchain/iMobileChain/whisper/whisperv6"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/rlp"
+	whisper "github.com/blockchain/imobilechain/whisper/whisperv6"
 )
 
 // A Nonce is a 64-bit hash which proves (combined with the mix-hash) that

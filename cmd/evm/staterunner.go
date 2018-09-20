@@ -23,10 +23,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/vm"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/tests"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/vm"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/tests"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

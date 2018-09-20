@@ -22,10 +22,10 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/blockchain/iMobileChain/accounts/keystore"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/accounts/keystore"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 // NewTransactor is a utility method to easily create a transaction signer from

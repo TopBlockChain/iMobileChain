@@ -19,7 +19,7 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 // Protocol represents a P2P subprotocol implementation.

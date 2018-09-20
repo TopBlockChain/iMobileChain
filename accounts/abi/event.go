@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 // Event is an event potentially triggered by the EVM's LOG mechanism. The Event

@@ -22,8 +22,8 @@ import (
 	"os"
 	"testing"
 
-	p2ptest "github.com/blockchain/iMobileChain/p2p/testing"
-	"github.com/blockchain/iMobileChain/swarm/state"
+	p2ptest "github.com/blockchain/imobilechain/p2p/testing"
+	"github.com/blockchain/imobilechain/swarm/state"
 )
 
 func newHiveTester(t *testing.T, params *HiveParams, n int, store state.Store) (*bzzTester, *Hive) {

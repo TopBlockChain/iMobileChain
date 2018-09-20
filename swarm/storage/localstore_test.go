@@ -22,7 +22,7 @@ import (
 	"os"
 	"testing"
 
-	ch "github.com/blockchain/iMobileChain/swarm/chunk"
+	ch "github.com/blockchain/imobilechain/swarm/chunk"
 )
 
 var (

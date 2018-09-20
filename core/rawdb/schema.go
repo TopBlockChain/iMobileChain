@@ -20,8 +20,8 @@ package rawdb
 import (
 	"encoding/binary"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/metrics"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/metrics"
 )
 
 // The fields below define the low level database schema prefixing.

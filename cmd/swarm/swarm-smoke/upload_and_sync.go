@@ -30,7 +30,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 	"github.com/pborman/uuid"
 
 	cli "gopkg.in/urfave/cli.v1"

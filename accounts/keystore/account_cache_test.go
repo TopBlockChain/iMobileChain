@@ -29,8 +29,8 @@ import (
 
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/common"
 )
 
 var (

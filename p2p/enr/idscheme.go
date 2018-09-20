@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/common/math"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/crypto/sha3"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/common/math"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/crypto/sha3"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 // Registry of known identity schemes.

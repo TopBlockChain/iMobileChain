@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 var searchTimeout = 1 * time.Second

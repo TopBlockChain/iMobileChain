@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 // SampleService is a trivial network service that can be attached to a node for

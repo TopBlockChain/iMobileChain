@@ -19,8 +19,8 @@
 package whisperv5
 
 import (
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
 )
 
 // TopicType represents a cryptographically secure, probabilistic partial

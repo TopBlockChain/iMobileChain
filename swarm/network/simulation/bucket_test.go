@@ -20,8 +20,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
 )
 
 // TestServiceBucket tests all bucket functionalities using subtests.

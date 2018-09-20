@@ -19,7 +19,7 @@ package core
 import (
 	"runtime"
 
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // senderCacher is a concurrent transaction sender recoverer anc cacher.

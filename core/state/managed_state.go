@@ -19,7 +19,7 @@ package state
 import (
 	"sync"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 type account struct {

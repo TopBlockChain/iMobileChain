@@ -25,8 +25,8 @@ import (
 	"sync"
 	"time"
 
-	ch "github.com/blockchain/iMobileChain/swarm/chunk"
-	"github.com/blockchain/iMobileChain/swarm/log"
+	ch "github.com/blockchain/imobilechain/swarm/chunk"
+	"github.com/blockchain/imobilechain/swarm/log"
 )
 
 /*

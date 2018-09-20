@@ -21,8 +21,8 @@ package geth
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/ethclient"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/ethclient"
 )
 
 // EthereumClient provides access to the Ethereum APIs.

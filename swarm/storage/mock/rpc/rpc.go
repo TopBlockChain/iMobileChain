@@ -26,10 +26,10 @@ package rpc
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/rpc"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	"github.com/blockchain/iMobileChain/swarm/storage/mock"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/rpc"
+	"github.com/blockchain/imobilechain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/storage/mock"
 )
 
 // GlobalStore is rpc.Client that connects to a centralized mock store.

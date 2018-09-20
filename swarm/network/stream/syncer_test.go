@@ -28,17 +28,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	"github.com/blockchain/iMobileChain/swarm/network"
-	"github.com/blockchain/iMobileChain/swarm/network/simulation"
-	"github.com/blockchain/iMobileChain/swarm/state"
-	"github.com/blockchain/iMobileChain/swarm/storage"
-	mockdb "github.com/blockchain/iMobileChain/swarm/storage/mock/db"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/network"
+	"github.com/blockchain/imobilechain/swarm/network/simulation"
+	"github.com/blockchain/imobilechain/swarm/state"
+	"github.com/blockchain/imobilechain/swarm/storage"
+	mockdb "github.com/blockchain/imobilechain/swarm/storage/mock/db"
 )
 
 const dataChunkCount = 200

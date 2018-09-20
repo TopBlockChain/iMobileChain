@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common/math"
+	"github.com/blockchain/imobilechain/common/math"
 )
 
 // Memory implements a simple memory model for the ethereum virtual machine.

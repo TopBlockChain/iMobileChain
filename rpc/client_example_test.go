@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/rpc"
 )
 
 // In this example, our client whishes to track the latest 'block number'

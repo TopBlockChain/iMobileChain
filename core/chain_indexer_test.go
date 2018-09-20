@@ -24,10 +24,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/rawdb"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/rawdb"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/ethdb"
 )
 
 // Runs multiple tests with randomized parameters.

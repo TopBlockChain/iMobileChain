@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 // Simulation provides a framework for running actions in a simulated network

@@ -20,7 +20,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/state"
+	"github.com/blockchain/imobilechain/swarm/state"
 )
 
 var ErrNotFound = errors.New("not found")

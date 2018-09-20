@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blockchain/iMobileChain/accounts/usbwallet"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/accounts/usbwallet"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/rpc"
 	"github.com/robertkrimen/otto"
 )
 

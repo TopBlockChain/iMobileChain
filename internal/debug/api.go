@@ -34,7 +34,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // Handler is the global debugging handler.

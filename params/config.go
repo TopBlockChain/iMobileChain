@@ -19,7 +19,7 @@ package params
 
 import (
 	"fmt"
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 	"math/big"
 )
 // fblcient的相关参数定义

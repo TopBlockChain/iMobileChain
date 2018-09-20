@@ -29,10 +29,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/api"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/swarm/api"
+	"github.com/blockchain/imobilechain/swarm/storage"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 
 	colorable "github.com/mattn/go-colorable"
 )

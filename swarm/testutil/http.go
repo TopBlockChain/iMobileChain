@@ -23,9 +23,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/api"
-	"github.com/blockchain/iMobileChain/swarm/storage"
-	"github.com/blockchain/iMobileChain/swarm/storage/mru"
+	"github.com/blockchain/imobilechain/swarm/api"
+	"github.com/blockchain/imobilechain/swarm/storage"
+	"github.com/blockchain/imobilechain/swarm/storage/mru"
 )
 
 type TestServer interface {

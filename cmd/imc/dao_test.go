@@ -23,10 +23,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/rawdb"
-	"github.com/blockchain/iMobileChain/ethdb"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/rawdb"
+	"github.com/blockchain/imobilechain/ethdb"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // Genesis block for nodes which don't care about the DAO fork (i.e. not configured)

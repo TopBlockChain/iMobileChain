@@ -19,7 +19,7 @@ package whisperv5
 import (
 	"testing"
 
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 func BenchmarkDeriveKeyMaterial(b *testing.B) {

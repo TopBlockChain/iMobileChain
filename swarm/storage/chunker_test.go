@@ -25,7 +25,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/crypto/sha3"
+	"github.com/blockchain/imobilechain/crypto/sha3"
 )
 
 /*

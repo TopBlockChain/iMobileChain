@@ -22,7 +22,7 @@ package geth
 import (
 	"errors"
 
-	"github.com/blockchain/iMobileChain/p2p/discv5"
+	"github.com/blockchain/imobilechain/p2p/discv5"
 )
 
 // Enode represents a host on the network.

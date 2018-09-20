@@ -25,9 +25,9 @@ import (
 	"sync"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/internal/ethapi"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/internal/ethapi"
+	"github.com/blockchain/imobilechain/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

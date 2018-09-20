@@ -18,7 +18,7 @@ package mru
 import (
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/hexutil"
 )
 
 func compareByteSliceToExpectedHex(t *testing.T, variableName string, actualValue []byte, expectedHex string) {

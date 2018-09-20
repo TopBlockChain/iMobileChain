@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // deployWallet creates a new web wallet based on some user input.

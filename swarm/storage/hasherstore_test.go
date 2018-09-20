@@ -21,9 +21,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/storage/encryption"
+	"github.com/blockchain/imobilechain/swarm/storage/encryption"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 func TestHasherStore(t *testing.T) {

@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 func TestWhisperBasic(t *testing.T) {

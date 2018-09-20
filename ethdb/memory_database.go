@@ -20,7 +20,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 /*

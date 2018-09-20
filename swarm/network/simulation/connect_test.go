@@ -19,7 +19,7 @@ package simulation
 import (
 	"testing"
 
-	"github.com/blockchain/iMobileChain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/discover"
 )
 
 func TestConnectToPivotNode(t *testing.T) {

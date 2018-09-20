@@ -19,8 +19,8 @@
 package geth
 
 import (
-	"github.com/blockchain/iMobileChain/whisper/shhclient"
-	whisper "github.com/blockchain/iMobileChain/whisper/whisperv6"
+	"github.com/blockchain/imobilechain/whisper/shhclient"
+	whisper "github.com/blockchain/imobilechain/whisper/whisperv6"
 )
 
 // WhisperClient provides access to the Ethereum APIs.

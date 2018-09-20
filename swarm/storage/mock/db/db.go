@@ -27,8 +27,8 @@ import (
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/util"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/swarm/storage/mock"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/swarm/storage/mock"
 )
 
 // GlobalStore contains the LevelDB database that is storing

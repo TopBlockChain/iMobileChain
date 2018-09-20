@@ -24,7 +24,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/log"
 )
 
 func externalUnmount(mountPoint string) error {

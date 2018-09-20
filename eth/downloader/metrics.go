@@ -19,7 +19,7 @@
 package downloader
 
 import (
-	"github.com/blockchain/iMobileChain/metrics"
+	"github.com/blockchain/imobilechain/metrics"
 )
 
 var (

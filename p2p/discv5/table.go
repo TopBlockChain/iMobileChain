@@ -29,7 +29,7 @@ import (
 	"net"
 	"sort"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 const (

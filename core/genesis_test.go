@@ -22,12 +22,12 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/consensus/ethash"
-	"github.com/blockchain/iMobileChain/core/rawdb"
-	"github.com/blockchain/iMobileChain/core/vm"
-	"github.com/blockchain/iMobileChain/ethdb"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/consensus/ethash"
+	"github.com/blockchain/imobilechain/core/rawdb"
+	"github.com/blockchain/imobilechain/core/vm"
+	"github.com/blockchain/imobilechain/ethdb"
+	"github.com/blockchain/imobilechain/params"
 )
 
 func TestDefaultGenesisBlock(t *testing.T) {

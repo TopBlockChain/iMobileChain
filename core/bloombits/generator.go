@@ -19,7 +19,7 @@ package bloombits
 import (
 	"errors"
 
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 var (

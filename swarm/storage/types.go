@@ -27,10 +27,10 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto/sha3"
-	"github.com/blockchain/iMobileChain/swarm/bmt"
-	ch "github.com/blockchain/iMobileChain/swarm/chunk"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto/sha3"
+	"github.com/blockchain/imobilechain/swarm/bmt"
+	ch "github.com/blockchain/imobilechain/swarm/chunk"
 )
 
 const MaxPO = 16

@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/swarm/api"
+	"github.com/blockchain/imobilechain/swarm/api"
 )
 
 const (

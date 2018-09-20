@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/mclock"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/mclock"
 )
 
 func TestTopicRadius(t *testing.T) {

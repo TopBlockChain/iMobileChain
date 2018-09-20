@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/hexutil"
 )
 
 func getTestUpdateLookup() *UpdateLookup {

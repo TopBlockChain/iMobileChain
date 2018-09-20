@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/core/vm"
+	"github.com/blockchain/imobilechain/core/vm"
 )
 
 // Iterator for disassembled EVM instructions

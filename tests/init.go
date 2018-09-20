@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // Forks table defines supported forks and their chain config.

@@ -23,11 +23,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/protocols"
-	p2ptest "github.com/blockchain/iMobileChain/p2p/testing"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/protocols"
+	p2ptest "github.com/blockchain/imobilechain/p2p/testing"
 )
 
 const (

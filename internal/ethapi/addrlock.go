@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 type AddrLocker struct {

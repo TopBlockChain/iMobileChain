@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // In this test, nodes try to randomly resolve each other.

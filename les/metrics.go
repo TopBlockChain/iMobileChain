@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/blockchain/iMobileChain/metrics"
-	"github.com/blockchain/iMobileChain/p2p"
+	"github.com/blockchain/imobilechain/metrics"
+	"github.com/blockchain/imobilechain/p2p"
 )
 
 var (

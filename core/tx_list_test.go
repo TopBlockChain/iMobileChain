@@ -20,8 +20,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 // Tests that transactions can be added to strict lists and list contents and

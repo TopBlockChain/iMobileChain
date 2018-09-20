@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/blockchain/iMobileChain/crypto"
+	ethcrypto "github.com/blockchain/imobilechain/crypto"
 )
 
 var (

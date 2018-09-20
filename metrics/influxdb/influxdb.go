@@ -5,8 +5,8 @@ import (
 	uurl "net/url"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/metrics"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/metrics"
 	"github.com/influxdata/influxdb/client"
 )
 

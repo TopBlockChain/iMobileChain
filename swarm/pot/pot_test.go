@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/swarm/log"
 )
 
 const (

@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
-	swarm "github.com/blockchain/iMobileChain/swarm/api/client"
+	"github.com/blockchain/imobilechain/log"
+	swarm "github.com/blockchain/imobilechain/swarm/api/client"
 	colorable "github.com/mattn/go-colorable"
 )
 

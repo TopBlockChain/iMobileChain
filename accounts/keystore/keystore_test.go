@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/event"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/event"
 )
 
 var testSigData = make([]byte, 32)

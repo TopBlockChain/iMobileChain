@@ -22,7 +22,7 @@ import (
 	"html/template"
 	"path"
 
-	"github.com/blockchain/iMobileChain/swarm/api"
+	"github.com/blockchain/imobilechain/swarm/api"
 )
 
 type htmlListData struct {

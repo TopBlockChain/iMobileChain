@@ -23,10 +23,10 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/common/math"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/math"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // Storage represents a contract's storage.

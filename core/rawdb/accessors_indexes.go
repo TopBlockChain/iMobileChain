@@ -17,10 +17,10 @@
 package rawdb
 
 import (
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 // ReadTxLookupEntry retrieves the positional metadata associated with a transaction

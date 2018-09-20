@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/params"
 )
 
 func TestTransaction(t *testing.T) {

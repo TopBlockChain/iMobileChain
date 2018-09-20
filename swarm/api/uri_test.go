@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 func TestParseURI(t *testing.T) {

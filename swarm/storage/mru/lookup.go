@@ -20,7 +20,7 @@ import (
 	"encoding/binary"
 	"hash"
 
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 // LookupParams is used to specify constraints when performing an update lookup

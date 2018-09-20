@@ -21,7 +21,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/event"
+	"github.com/blockchain/imobilechain/event"
 )
 
 // Manager is an overarching account manager that can communicate with various

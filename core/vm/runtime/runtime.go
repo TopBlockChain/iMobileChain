@@ -21,12 +21,12 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/vm"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/ethdb"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/vm"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/ethdb"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // Config is a basic type specifying certain configuration flags for running

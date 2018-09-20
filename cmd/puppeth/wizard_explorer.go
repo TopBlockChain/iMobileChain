@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // deployExplorer creates a new block explorer based on some user input.

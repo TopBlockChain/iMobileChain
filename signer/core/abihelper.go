@@ -22,8 +22,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/accounts/abi"
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/accounts/abi"
+	"github.com/blockchain/imobilechain/common"
 
 	"bytes"
 	"os"

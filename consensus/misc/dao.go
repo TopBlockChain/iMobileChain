@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/params"
 )
 
 var (

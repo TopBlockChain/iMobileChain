@@ -19,10 +19,10 @@ package rawdb
 import (
 	"encoding/json"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/params"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/params"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 // ReadDatabaseVersion retrieves the version number of the database.

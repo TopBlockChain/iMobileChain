@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/p2p/simulations/pipes"
+	"github.com/blockchain/imobilechain/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/api"
-	swarm "github.com/blockchain/iMobileChain/swarm/api/client"
+	"github.com/blockchain/imobilechain/swarm/api"
+	swarm "github.com/blockchain/imobilechain/swarm/api/client"
 )
 
 // TestManifestChange tests manifest add, update and remove

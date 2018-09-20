@@ -24,8 +24,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/accounts/abi/bind"
-	"github.com/blockchain/iMobileChain/common/compiler"
+	"github.com/blockchain/imobilechain/accounts/abi/bind"
+	"github.com/blockchain/imobilechain/common/compiler"
 )
 
 var (

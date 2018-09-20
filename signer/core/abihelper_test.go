@@ -25,8 +25,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/blockchain/iMobileChain/accounts/abi"
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/accounts/abi"
+	"github.com/blockchain/imobilechain/common"
 )
 
 func verify(t *testing.T, jsondata, calldata string, exp []interface{}) {

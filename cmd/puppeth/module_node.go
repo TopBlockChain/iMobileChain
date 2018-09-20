@@ -26,8 +26,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // nodeDockerfile is the Dockerfile required to run an Ethereum node.

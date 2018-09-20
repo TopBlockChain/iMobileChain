@@ -7,10 +7,10 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/common/math"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/math"
+	"github.com/blockchain/imobilechain/params"
 )
 
 var _ = (*genesisSpecMarshaling)(nil)

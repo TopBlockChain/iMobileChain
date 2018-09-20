@@ -23,7 +23,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/storage/mock/test"
+	"github.com/blockchain/imobilechain/swarm/storage/mock/test"
 )
 
 // TestDBStore is running a test.MockStore tests

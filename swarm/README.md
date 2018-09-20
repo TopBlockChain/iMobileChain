@@ -29,7 +29,7 @@ Building Swarm requires Go (version 1.10 or later).
 
     go get -d github.com/blockchain/iMobileChain
 
-    go install github.com/blockchain/iMobileChain/cmd/swarm
+    go install github.com/blockchain/imobilechain/cmd/swarm
 
 ## Running Swarm
 
@@ -181,7 +181,7 @@ Once you have `stateth` installed, and you have Docker running locally, you have
 
 1. Run `stateth` and keep it running in the background
 ```
-stateth --rm --grafana-dashboards-folder $GOPATH/src/github.com/blockchain/iMobileChain/swarm/grafana_dashboards --influxdb-database metrics
+stateth --rm --grafana-dashboards-folder $GOPATH/src/github.com/blockchain/imobilechain/swarm/grafana_dashboards --influxdb-database metrics
 ```
 
 2. Run `swarm` with at least the following params:
@@ -228,7 +228,7 @@ Please make sure your contributions adhere to our coding guidelines:
  * Code must adhere to the official Go [formatting](https://golang.org/doc/effective_go.html#formatting) guidelines (i.e. uses [gofmt](https://golang.org/cmd/gofmt/)).
  * Code must be documented adhering to the official Go [commentary](https://golang.org/doc/effective_go.html#commentary) guidelines.
  * Pull requests need to be based on and opened against the `master` branch.
- * [Code review guidelines](https://github.com/blockchain/iMobileChain/wiki/Code-Review-Guidelines).
+ * [Code review guidelines](https://github.com/blockchain/imobilechain/wiki/Code-Review-Guidelines).
  * Commit messages should be prefixed with the package(s) they modify.
    * E.g. "swarm/fuse: ignore default manifest entry"
 

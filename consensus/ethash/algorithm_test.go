@@ -26,9 +26,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // prepare converts an ethash cache or dataset from a byte stream into the internal

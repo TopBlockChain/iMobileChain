@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // StateDB is an EVM database for full state querying.

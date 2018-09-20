@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm"
+	"github.com/blockchain/imobilechain/swarm"
 )
 
 // TestCLISwarmExportImport perform the following test:

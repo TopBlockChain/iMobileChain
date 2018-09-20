@@ -20,7 +20,7 @@ import (
 	"crypto/sha256"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/crypto"
 	"golang.org/x/crypto/pbkdf2"
 )
 

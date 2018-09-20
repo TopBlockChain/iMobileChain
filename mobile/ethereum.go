@@ -22,7 +22,7 @@ import (
 	"errors"
 
 	ethereum "github.com/blockchain/iMobileChain"
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // Subscription represents an event subscription where events are

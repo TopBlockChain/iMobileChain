@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common/math"
+	"github.com/blockchain/imobilechain/common/math"
 )
 
 func memorySha3(stack *Stack) *big.Int {

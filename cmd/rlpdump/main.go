@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 var (

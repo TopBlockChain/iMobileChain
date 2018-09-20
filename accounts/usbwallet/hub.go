@@ -22,9 +22,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/event"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/event"
+	"github.com/blockchain/imobilechain/log"
 	"github.com/karalabe/hid"
 )
 

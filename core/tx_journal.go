@@ -21,10 +21,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 // errNoActiveJournal is returned if a transaction is attempted to be inserted

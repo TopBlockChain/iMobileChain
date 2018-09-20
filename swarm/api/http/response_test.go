@@ -25,7 +25,7 @@ import (
 
 	"golang.org/x/net/html"
 
-	"github.com/blockchain/iMobileChain/swarm/testutil"
+	"github.com/blockchain/imobilechain/swarm/testutil"
 )
 
 func TestError(t *testing.T) {

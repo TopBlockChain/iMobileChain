@@ -22,11 +22,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/common/hexutil"
+	"github.com/blockchain/imobilechain/common/hexutil"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	swarm "github.com/blockchain/iMobileChain/swarm/api/client"
-	"github.com/blockchain/iMobileChain/swarm/storage/mru"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	swarm "github.com/blockchain/imobilechain/swarm/api/client"
+	"github.com/blockchain/imobilechain/swarm/storage/mru"
 	"gopkg.in/urfave/cli.v1"
 )
 

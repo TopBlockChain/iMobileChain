@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/crypto"
 )
 
 // Method represents a callable given a `Name` and whether the method is a constant.

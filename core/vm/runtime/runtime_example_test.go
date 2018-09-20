@@ -19,8 +19,8 @@ package runtime_test
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/vm/runtime"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/vm/runtime"
 )
 
 func ExampleExecute() {

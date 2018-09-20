@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 func TestPack(t *testing.T) {

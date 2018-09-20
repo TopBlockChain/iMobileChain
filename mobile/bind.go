@@ -22,10 +22,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/accounts/abi"
-	"github.com/blockchain/iMobileChain/accounts/abi/bind"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/accounts/abi"
+	"github.com/blockchain/imobilechain/accounts/abi/bind"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // Signer is an interaface defining the callback when a contract requires a

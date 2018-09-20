@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/event"
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/event"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/rpc"
 	"github.com/julienschmidt/httprouter"
 	"golang.org/x/net/websocket"
 )

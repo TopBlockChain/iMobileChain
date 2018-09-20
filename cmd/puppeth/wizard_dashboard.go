@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // deployDashboard queries the user for various input on deploying a web-service

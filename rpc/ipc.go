@@ -20,8 +20,8 @@ import (
 	"context"
 	"net"
 
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/p2p/netutil"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/p2p/netutil"
 )
 
 // ServeListener accepts connections on l, serving JSON-RPC on them.

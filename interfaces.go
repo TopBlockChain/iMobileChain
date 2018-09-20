@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

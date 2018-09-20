@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	ethereum "github.com/blockchain/iMobileChain"
-	"github.com/blockchain/iMobileChain/accounts/abi"
-	"github.com/blockchain/iMobileChain/accounts/abi/bind"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/event"
+	"github.com/blockchain/imobilechain/accounts/abi"
+	"github.com/blockchain/imobilechain/accounts/abi/bind"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/event"
 )
 
 // PublicResolverABI is the input ABI used to generate the binding from.

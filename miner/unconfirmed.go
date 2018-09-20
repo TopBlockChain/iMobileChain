@@ -19,9 +19,9 @@ package miner
 import (
 	"container/ring"
 	"sync"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // chainRetriever is used by the unconfirmed block set to verify whether a previously

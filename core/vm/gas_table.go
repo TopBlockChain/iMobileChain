@@ -17,9 +17,9 @@
 package vm
 
 import (
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/math"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/math"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // memoryGasCosts calculates the quadratic gas for memory expansion. It does so

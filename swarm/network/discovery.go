@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/swarm/pot"
+	"github.com/blockchain/imobilechain/swarm/pot"
 )
 
 // discovery bzz extension for requesting and relaying node address records

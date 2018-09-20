@@ -21,7 +21,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/blockchain/iMobileChain/eth/tracers/internal/tracers"
+	"github.com/blockchain/imobilechain/eth/tracers/internal/tracers"
 )
 
 // all contains all the built in JavaScript tracers by name.

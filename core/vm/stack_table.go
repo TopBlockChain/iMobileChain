@@ -19,7 +19,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/params"
 )
 
 func makeStackFunc(pop, push int) stackValidationFunc {

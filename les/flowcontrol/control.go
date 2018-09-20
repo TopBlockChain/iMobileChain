@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common/mclock"
+	"github.com/blockchain/imobilechain/common/mclock"
 )
 
 const fcTimeConst = time.Millisecond

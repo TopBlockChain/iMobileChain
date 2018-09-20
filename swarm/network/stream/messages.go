@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/blockchain/iMobileChain/metrics"
-	"github.com/blockchain/iMobileChain/swarm/log"
-	bv "github.com/blockchain/iMobileChain/swarm/network/bitvector"
-	"github.com/blockchain/iMobileChain/swarm/spancontext"
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/metrics"
+	"github.com/blockchain/imobilechain/swarm/log"
+	bv "github.com/blockchain/imobilechain/swarm/network/bitvector"
+	"github.com/blockchain/imobilechain/swarm/spancontext"
+	"github.com/blockchain/imobilechain/swarm/storage"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 

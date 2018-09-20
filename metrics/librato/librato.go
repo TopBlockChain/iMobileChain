@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/blockchain/iMobileChain/metrics"
+	"github.com/blockchain/imobilechain/metrics"
 )
 
 // a regexp for extracting the unit from time.Duration.String

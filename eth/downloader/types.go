@@ -19,7 +19,7 @@ package downloader
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // peerDropFn is a callback type for dropping a peer detected as malicious.

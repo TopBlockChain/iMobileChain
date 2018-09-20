@@ -25,8 +25,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/accounts"
-	"github.com/blockchain/iMobileChain/crypto"
+	"github.com/blockchain/imobilechain/accounts"
+	"github.com/blockchain/imobilechain/crypto"
 	"github.com/pborman/uuid"
 	"golang.org/x/crypto/pbkdf2"
 )

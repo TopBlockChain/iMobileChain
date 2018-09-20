@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/swarm/pot"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/swarm/pot"
 )
 
 func init() {

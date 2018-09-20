@@ -22,8 +22,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/ethdb"
 )
 
 func TestIterator(t *testing.T) {

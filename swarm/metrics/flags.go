@@ -19,10 +19,10 @@ package metrics
 import (
 	"time"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	gethmetrics "github.com/blockchain/iMobileChain/metrics"
-	"github.com/blockchain/iMobileChain/metrics/influxdb"
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	gethmetrics "github.com/blockchain/imobilechain/metrics"
+	"github.com/blockchain/imobilechain/metrics/influxdb"
+	"github.com/blockchain/imobilechain/swarm/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

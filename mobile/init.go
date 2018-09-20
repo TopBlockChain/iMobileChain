@@ -22,7 +22,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 func init() {

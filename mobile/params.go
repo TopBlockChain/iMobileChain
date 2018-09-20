@@ -21,9 +21,9 @@ package geth
 import (
 	"encoding/json"
 
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/p2p/discv5"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/p2p/discv5"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

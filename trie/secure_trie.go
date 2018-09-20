@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // SecureTrie wraps a trie with key hashing. In a secure trie, all

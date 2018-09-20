@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/params"
 )
 
 type (

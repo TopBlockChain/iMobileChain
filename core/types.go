@@ -17,9 +17,9 @@
 package core
 
 import (
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/core/vm"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

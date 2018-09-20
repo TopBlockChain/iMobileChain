@@ -17,9 +17,9 @@
 package simulation
 
 import (
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/p2p/discover"
-	"github.com/blockchain/iMobileChain/p2p/simulations/adapters"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/p2p/discover"
+	"github.com/blockchain/imobilechain/p2p/simulations/adapters"
 )
 
 // Service returns a single Service by name on a particular node

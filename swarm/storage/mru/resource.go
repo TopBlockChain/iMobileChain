@@ -21,7 +21,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 const (

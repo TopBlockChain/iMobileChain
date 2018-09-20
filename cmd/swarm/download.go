@@ -21,10 +21,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/swarm/api"
-	swarm "github.com/blockchain/iMobileChain/swarm/api/client"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/swarm/api"
+	swarm "github.com/blockchain/imobilechain/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

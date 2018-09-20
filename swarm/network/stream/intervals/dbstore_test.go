@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/swarm/state"
+	"github.com/blockchain/imobilechain/swarm/state"
 )
 
 // TestDBStore tests basic functionality of DBStore.

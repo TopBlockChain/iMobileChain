@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/blockchain/iMobileChain/crypto/sha3"
-	ch "github.com/blockchain/iMobileChain/swarm/chunk"
-	"github.com/blockchain/iMobileChain/swarm/storage/encryption"
+	"github.com/blockchain/imobilechain/crypto/sha3"
+	ch "github.com/blockchain/imobilechain/swarm/chunk"
+	"github.com/blockchain/imobilechain/swarm/storage/encryption"
 )
 
 type hasherStore struct {

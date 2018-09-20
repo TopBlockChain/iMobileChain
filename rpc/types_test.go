@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common/math"
+	"github.com/blockchain/imobilechain/common/math"
 )
 
 func TestBlockNumberJSONUnmarshal(t *testing.T) {

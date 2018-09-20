@@ -25,13 +25,13 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/swarm/api"
-	swarmhttp "github.com/blockchain/iMobileChain/swarm/api/http"
-	"github.com/blockchain/iMobileChain/swarm/multihash"
-	"github.com/blockchain/iMobileChain/swarm/storage/mru"
-	"github.com/blockchain/iMobileChain/swarm/testutil"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/swarm/api"
+	swarmhttp "github.com/blockchain/imobilechain/swarm/api/http"
+	"github.com/blockchain/imobilechain/swarm/multihash"
+	"github.com/blockchain/imobilechain/swarm/storage/mru"
+	"github.com/blockchain/imobilechain/swarm/testutil"
 )
 
 func serverFunc(api *api.API) testutil.TestServer {

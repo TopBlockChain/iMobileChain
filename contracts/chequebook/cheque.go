@@ -36,14 +36,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/accounts/abi/bind"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/common/hexutil"
-	"github.com/blockchain/iMobileChain/contracts/chequebook/contract"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/crypto"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/swarm/services/swap/swap"
+	"github.com/blockchain/imobilechain/accounts/abi/bind"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/common/hexutil"
+	"github.com/blockchain/imobilechain/contracts/chequebook/contract"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/crypto"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/swarm/services/swap/swap"
 )
 
 // TODO(zelig): watch peer solvency and notify of bouncing cheques

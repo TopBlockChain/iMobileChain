@@ -25,9 +25,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/blockchain/iMobileChain/cmd/utils"
-	"github.com/blockchain/iMobileChain/node"
-	"github.com/blockchain/iMobileChain/rpc"
+	"github.com/blockchain/imobilechain/cmd/utils"
+	"github.com/blockchain/imobilechain/node"
+	"github.com/blockchain/imobilechain/rpc"
 	"github.com/gizak/termui"
 	"gopkg.in/urfave/cli.v1"
 )

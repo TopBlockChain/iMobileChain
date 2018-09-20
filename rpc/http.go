@@ -31,7 +31,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 	"github.com/rs/cors"
 )
 

@@ -54,7 +54,7 @@ func TestBloom(t *testing.T) {
 import (
 	"testing"
 
-	"github.com/blockchain/iMobileChain/core/state"
+	"github.com/blockchain/imobilechain/core/state"
 )
 
 func TestBloom9(t *testing.T) {

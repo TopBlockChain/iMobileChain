@@ -18,7 +18,7 @@ package miner
 
 import (
 	"fmt"
-	"github.com/blockchain/iMobileChain/fbclient"
+	"github.com/blockchain/imobilechain/fbclient"
 	//"bytes"
 	"errors"
 	"math/big"
@@ -28,16 +28,16 @@ import (
 	//"strconv"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/consensus"
-	"github.com/blockchain/iMobileChain/consensus/misc"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/core/state"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/core/vm"
-	"github.com/blockchain/iMobileChain/event"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/consensus"
+	"github.com/blockchain/imobilechain/consensus/misc"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/core/state"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/core/vm"
+	"github.com/blockchain/imobilechain/event"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/params"
 )
 
 const (

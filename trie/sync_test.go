@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/ethdb"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/ethdb"
 )
 
 // makeTestTrie create a sample test trie to test node-wise reconstruction.

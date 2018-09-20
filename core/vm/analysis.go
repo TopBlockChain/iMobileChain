@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
+	"github.com/blockchain/imobilechain/common"
 )
 
 // destinations stores one map per contract (keyed by hash of code).

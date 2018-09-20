@@ -20,8 +20,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core/types"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core/types"
 )
 
 // senderFromServer is a types.Signer that remembers the sender address returned by the RPC

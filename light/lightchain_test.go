@@ -21,13 +21,13 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/consensus/ethash"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/core/rawdb"
-	"github.com/blockchain/iMobileChain/core/types"
-	"github.com/blockchain/iMobileChain/ethdb"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/consensus/ethash"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/core/rawdb"
+	"github.com/blockchain/imobilechain/core/types"
+	"github.com/blockchain/imobilechain/ethdb"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // So we can deterministically seed different blockchains

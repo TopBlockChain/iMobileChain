@@ -26,12 +26,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/consensus/ethash"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/eth"
-	"github.com/blockchain/iMobileChain/internal/jsre"
-	"github.com/blockchain/iMobileChain/node"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/consensus/ethash"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/eth"
+	"github.com/blockchain/imobilechain/internal/jsre"
+	"github.com/blockchain/imobilechain/node"
 )
 
 const (

@@ -20,9 +20,9 @@ import (
 	"hash"
 	"sync"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/crypto/sha3"
-	"github.com/blockchain/iMobileChain/rlp"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/crypto/sha3"
+	"github.com/blockchain/imobilechain/rlp"
 )
 
 type hasher struct {

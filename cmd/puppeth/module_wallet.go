@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/blockchain/iMobileChain/log"
+	"github.com/blockchain/imobilechain/log"
 )
 
 // walletDockerfile is the Dockerfile required to run a web wallet.

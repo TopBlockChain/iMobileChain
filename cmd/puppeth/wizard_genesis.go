@@ -25,10 +25,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/blockchain/iMobileChain/common"
-	"github.com/blockchain/iMobileChain/core"
-	"github.com/blockchain/iMobileChain/log"
-	"github.com/blockchain/iMobileChain/params"
+	"github.com/blockchain/imobilechain/common"
+	"github.com/blockchain/imobilechain/core"
+	"github.com/blockchain/imobilechain/log"
+	"github.com/blockchain/imobilechain/params"
 )
 
 // makeGenesis creates a new genesis struct based on some user input.

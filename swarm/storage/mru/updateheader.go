@@ -17,7 +17,7 @@
 package mru
 
 import (
-	"github.com/blockchain/iMobileChain/swarm/storage"
+	"github.com/blockchain/imobilechain/swarm/storage"
 )
 
 // updateHeader models the non-payload components of a Resource Update

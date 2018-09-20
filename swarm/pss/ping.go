@@ -23,9 +23,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/blockchain/iMobileChain/p2p"
-	"github.com/blockchain/iMobileChain/p2p/protocols"
-	"github.com/blockchain/iMobileChain/swarm/log"
+	"github.com/blockchain/imobilechain/p2p"
+	"github.com/blockchain/imobilechain/p2p/protocols"
+	"github.com/blockchain/imobilechain/swarm/log"
 )
 
 // Generic ping protocol implementation for
