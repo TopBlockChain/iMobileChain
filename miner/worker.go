@@ -923,6 +923,7 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 	var PrevTime uint64
 	var	CurrentTime uint64
 	var duration int64
+	var diffculty uint64
     //var PrevBlock=parent
 	PrevTime=parent.Fbtime().Uint64()
 	//fmt.Println("PrevTime",PrevTime)
@@ -940,11 +941,12 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 	if err0==nil {
 		  CurrentTime=CurrentTime1
 	      //var getPoolWinnersArgs = [][]byte{[]byte(PrevTime), []byte(CurrentTime), []byte(CurrentBlocknumber.String()), []byte("3")} //查询参数准备
-	      Resp1,err1:=w.fbclient.CandidateMiners(PrevTime,CurrentTime,CurrentBlocknumber.Uint64())   //.GetPoolWinners(getPoolWinnersArgs)   //获得查询数据
+	      Resp1,diff,err1:=w.fbclient.CandidateMiners(PrevTime,CurrentTime,CurrentBlocknumber.Uint64())   //.GetPoolWinners(getPoolWinnersArgs)   //获得查询数据
 	      if err1!=nil {
 		      fmt.Println("查询候选矿工失败，错误:",err1)
 		      return
 		  }
+		  difficulty=diff
 		  //var getMobileMiningArgs = [][]byte{[]byte(PrevTime), []byte(CurrentTime),[]byte(CurrentBlocknumber.String())}
 		//   Resp2,err2:=w.fbclient.RewardMobileMiners(PrevTime,CurrentTime)  //.GetMobileMinners(getMobileMiningArgs)
 		//   if err2!=nil{
@@ -989,7 +991,7 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 		header.Coinbase = w.coinbase
 	}
 	//if header.Fbtime.Cmp(big.NewInt(0))>0{
-	header.Difficulty = new(big.Int).Set(params.MinimumDifficulty)
+	header.Difficulty = big.NewInt(diffculty)
 	//}else{ 
 	 //  if err := w.engine.Prepare(w.chain, header); err != nil {
 	// 	  log.Error("Failed to prepare header for mining", "err", err)

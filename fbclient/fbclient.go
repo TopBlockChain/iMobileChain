@@ -122,13 +122,13 @@ func (Fbc *Fbclient)WaitTime(Miners []string, Coinbase string) (Duration int64) 
    Duration = int64(params.BlockProcessingTime + params.AveragyWattingTime*4)
    return Duration
 }
-func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint64) (Candidates []string,err error) { 
+func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint64) (Candidates []string, diff int64, err error) { 
 	var Miners []string
 	var candidates []string
 	for k:=CurNumber;k>PrevNumber;k--{
 	    block, err :=Fbc.ledgerClient.QueryBlock(k)
 	    if err != nil {
-		   return nil, err
+		   return nil, int64(0),err
 	    }
 	    for _,value:=range block.Data.Data{
 		//fmt.Println("key",key,"value:",string(value))
@@ -146,7 +146,7 @@ func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint
     for j:=uint64(0);j<3&&j<uint64(len(Miners));j++{
 		candidates=append(candidates,Miners[HashNumber(int64(len(Miners)),Seed+j)])
 	}
- 	return candidates,nil
+ 	return candidates,int64(len(Miners)),nil
 }
 func (Fbc *Fbclient)RewardMobileMiners(PrevNumber uint64,CurNumber uint64) (MobMiners[]string,err error) { 
 	for k:=CurNumber;k>PrevNumber;k--{

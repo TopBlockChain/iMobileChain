@@ -254,7 +254,7 @@ func (ethash *Ethash) verifyHeader(chain consensus.ChainReader, header, parent *
 	}
 	if CurrentTime!=uint64(0){
 	    //var getPoolWinnersArgs = [][]byte{[]byte(PrevTime), []byte(CurrentTime), []byte(header.Number.String()), []byte("3")}  //查询参数准备
-	    Resp,err:=ethash.fbclient.CandidateMiners(PrevTime,CurrentTime,header.Number.Uint64())  //.GetPoolWinners(getPoolWinnersArgs)   //获得查询数据
+	    Resp,_,err:=ethash.fbclient.CandidateMiners(PrevTime,CurrentTime,header.Number.Uint64())  //.GetPoolWinners(getPoolWinnersArgs)   //获得查询数据
 	    if err!=nil{
 		    fmt.Println("查询矿工失败，错误：",err)
 		    return errZeroBlockTime
