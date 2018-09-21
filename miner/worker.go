@@ -923,7 +923,7 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 	var PrevTime uint64
 	var	CurrentTime uint64
 	var duration int64
-	var diffculty uint64
+	var difficulty int64
     //var PrevBlock=parent
 	PrevTime=parent.Fbtime().Uint64()
 	//fmt.Println("PrevTime",PrevTime)
@@ -991,7 +991,7 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 		header.Coinbase = w.coinbase
 	}
 	//if header.Fbtime.Cmp(big.NewInt(0))>0{
-	header.Difficulty = big.NewInt(diffculty)
+	header.Difficulty = big.NewInt(difficulty)
 	//}else{ 
 	 //  if err := w.engine.Prepare(w.chain, header); err != nil {
 	// 	  log.Error("Failed to prepare header for mining", "err", err)
