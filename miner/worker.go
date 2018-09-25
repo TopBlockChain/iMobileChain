@@ -568,7 +568,7 @@ func (w *worker) SealBlock(chain consensus.ChainReader,block *types.Block, resul
 	// Wait until sealing is terminated or delay timeout.
 	abort := make(chan struct{})
 	var (
-		pend   sync.WaitGroup
+		//pend   sync.WaitGroup
 	    locals = make(chan *types.Block)
 	)
 	go 	w.mine(block, abort, locals)
@@ -586,7 +586,7 @@ func (w *worker) SealBlock(chain consensus.ChainReader,block *types.Block, resul
 			}
 			close(abort)
 		}
-		pend.Wait()
+		//pend.Wait()
 	}()
     return nil
 }
@@ -923,7 +923,7 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 	var PrevTime uint64
 	var	CurrentTime uint64
 	var duration int64
-	var difficulty int64
+	var difficulty= int64(0)
     //var PrevBlock=parent
 	PrevTime=parent.Fbtime().Uint64()
 	//fmt.Println("PrevTime",PrevTime)
