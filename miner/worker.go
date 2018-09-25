@@ -571,7 +571,7 @@ func (w *worker) SealBlock(chain consensus.ChainReader,block *types.Block, resul
 		pend   sync.WaitGroup
 	    locals = make(chan *types.Block)
 	)
-	pend.Add(1)
+	//pend.Add(1)
 	go 	w.mine(block, abort, locals)
 	go func() {
 		var result *types.Block
