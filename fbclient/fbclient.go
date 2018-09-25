@@ -146,7 +146,7 @@ func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint
     for j:=uint64(0);j<3&&j<uint64(len(Miners));j++{
 		candidates=append(candidates,Miners[HashNumber(int64(len(Miners)),Seed+j)])
 	}
- 	return candidates,int64(len(Miners)),nil
+ 	return candidates,int64(len(Miners)+1),nil
 }
 func (Fbc *Fbclient)RewardMobileMiners(PrevNumber uint64,CurNumber uint64) (MobMiners[]string,err error) { 
 	for k:=CurNumber;k>PrevNumber;k--{

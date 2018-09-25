@@ -526,9 +526,9 @@ func (w *worker) taskLoop() {
 			}
 			//封装区块号一定大于当前区块号(当前封装的区块已经落后于从网络中获取的区块，则不执行封装操作)
 			//此处加一Invoke存储t0-t1时刻的Miner和MobileMiners
-			if w.chain.CurrentHeader().Number.Cmp(task.block.Number()) >=0 {
-				continue
-			}
+			// if w.chain.CurrentHeader().Number.Cmp(task.block.Number()) >=0 {
+			// 	continue
+			// }
 			//if task.block.Header().Fbtime.Cmp(big.NewInt(0))>0{
 			var header = task.block.Header()
 			header = types.CopyHeader(header)
@@ -598,7 +598,7 @@ func (w *worker) mine(block *types.Block, abort chan struct{}, found chan *types
 	headertime := int64(float64(block.Time().Int64()) - float64(params.BlockProcessingTime)*float64(block.GasUsed())/float64(block.GasLimit()))
 	if now := time.Now().Unix(); headertime > now {
 		wait = time.Duration(headertime-now) * time.Second
-		//log.Info("处理延时", "等待...", common.PrettyDuration(wait), "now", now, "headertime", headertime, "blocktime", block.Time().Int64())
+		log.Info("处理延时", "等待...", common.PrettyDuration(wait), "now", now, "headertime", headertime, "blocktime", block.Time().Int64())
 	}
 	var header = block.Header()
 	header = types.CopyHeader(header)
@@ -924,7 +924,7 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 	var PrevTime uint64
 	var	CurrentTime uint64
 	var duration int64
-	var difficulty= int64(0)
+	var difficulty= int64(1)
     //var PrevBlock=parent
 	PrevTime=parent.Fbtime().Uint64()
 	//fmt.Println("PrevTime",PrevTime)
