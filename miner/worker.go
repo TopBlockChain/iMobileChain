@@ -598,7 +598,7 @@ func (w *worker) mine(block *types.Block, abort chan struct{}, found chan *types
 	headertime := int64(float64(block.Time().Int64()) - float64(params.BlockProcessingTime)*float64(block.GasUsed())/float64(block.GasLimit()))
 	if now := time.Now().Unix(); headertime > now {
 		wait = time.Duration(headertime-now) * time.Second
-		log.Info("处理延时", "等待...", common.PrettyDuration(wait), "now", now, "headertime", headertime, "blocktime", block.Time().Int64())
+		//log.Info("处理延时", "等待...", common.PrettyDuration(wait), "now", now, "headertime", headertime, "blocktime", block.Time().Int64())
 	}
 	var header = block.Header()
 	header = types.CopyHeader(header)
