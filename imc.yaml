@@ -22,7 +22,8 @@ client:
 
   # Which organization does this application instance belong to? The value must be the name of an org
   # defined under "organizations"
-  organization: DEFAULT
+  #这里DEFAULT命名需要跟链上保持一致
+  organization: Org1MSP
 
   logging:
     level: info #debug #info
@@ -72,27 +73,36 @@ client:
    # BCCSP config for the client. Used by GO SDK.
   BCCSP:
     security:
-     enabled: true
-     default:
-      provider: "SW"
-     hashAlgorithm: "SHA2"
-     softVerify: true
-     level: 256
+      enabled: true
+      default:
+        provider: "SW"
+      hashAlgorithm: "SHA2"
+      softVerify: true
+      level: 256
 #
 # list of participating organizations in this network
 #
 organizations:
-  DEFAULT:
-    mspid: DEFAULT
+  #这里DEFAULT命名需要跟链上保持一致
+  Org1MSP:
+    mspid: Org1MSP
     # This org's MSP store (absolute path or relative to client.cryptoconfig)
     # if running in linux, you should change the char "\" to "/"
-    cryptoPath:  ./hyperledger/fabric/msp
-    # users:
-    #     Admin:
-    #         cert:
-    #             pem:
+    # 参考fabric-sdk-go\pkg\core\config\testdata\config_test_embedded_pems.yaml
+    # 无此配置时，会有后面的提示，但并不影响：msp.NewIdentityManager -> WARN Cryptopath not provided for organization [default], MSP stores not created
+    cryptoPath:  imc/msp 
+    users:
+      #下面需要跟代码中的fabsdk.WithUser("testuser")处保持一致
+      testuser: 
+        key:
+          #path: hyperledger\fabric\msp\keystore\b49efcb9a021b7f8194968fec3fb393ab200a1e90835dbbce4c6a2d97cbc786e_sk
+          path: imc/msp/keystore/app.key
+        cert:
+          #path: hyperledger\fabric\msp\signcerts\cert.pem
+          path: imc/msp/signcerts/app.cert
     peers:
-      - myc
+      #下面命名需要跟peers配置下面的保持一致
+      - testimcpeer
 
 #
 # List of peers to send various requests to, including endorsement, query
@@ -110,13 +120,16 @@ peers:
       keep-alive-permit: false
       fail-fast: false
       # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-      allow-insecure: true
+      # 我们的测试并没有使用TLS，所以这里必须设置为true，否则会自动连接grpcs，就会失败
+      allow-insecure: false
 
-  myc:
-    url: 18.182.20.88:7051
+  #下面的命名会成为其他地方指定peer的标准命名
+  testimcpeer:
+    url: peer0.org1.example.com:7051
     # if running in linux, you should change the char "\" to "/"
-    # tlsCACerts:
+    tlsCACerts:
     #   path: hyperledger\msp\tlscacerts\tlsroot.pem
+      path: imc/msp/cacerts/peer-tls-ca.cert
 
 
 #
@@ -125,11 +138,9 @@ peers:
 # section.
 #
 channels:
-  # mychannel:
-  #   orderers:
-  #     - orderer.example.com
   # Mychannel overrides initialBackoff for discovery
-  myc:
+  # 下面命名需要跟链上保持一致
+  mychannel: 
     policies:
       discovery:
         retryOpts:
@@ -137,7 +148,8 @@ channels:
           attempts: 4
           initialBackoff: 1s
     peers:
-      myc:
+      #下面命名需要跟peers配置下面的保持一致
+      testimcpeer: 
         # [Optional]. will this peer be sent transaction proposals for endorsement? The peer must
         # have the chaincode installed. The app can also use this property to decide which peers
         # to send the chaincode install request. Default: true
@@ -167,7 +179,7 @@ channels:
 #
 orderers:
   _default:
-    url: 18.182.20.88:7050
+    url: orderer0.orderer.example.com:7050
 
     # these are standard properties defined by the gRPC library
     # they will be passed in as-is to gRPC client constructor
@@ -181,11 +193,13 @@ orderers:
       #keep-alive-permit: false
       #fail-fast: false
       # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-      allow-insecure: true
+      # 我们的测试并没有使用TLS，所以这里必须设置为true，否则会自动连接grpcs，就会失败
+      allow-insecure: false
 
-    # tlsCACerts:
+    tlsCACerts:
     #   # Certificate location absolute path
     #   path: ${GOPATH}/src/github.com/hyperledger/fabric-sdk-go/${CRYPTOCONFIG_FIXTURES_PATH}/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+       path: imc/msp/cacerts/orderer-tls-ca.cert
 
 # EntityMatchers enable substitution of network hostnames with static configurations
  # so that properties can be mapped. Regex can be used for this purpose
@@ -196,10 +210,15 @@ orderers:
 # sslTargetOverrideUrlSubstitutionExp follow in the same lines as
  # SubstitutionExp for the fields gprcOptions.ssl-target-name-override respectively
 # In any case mappedHost's config will be used, so mapped host cannot be empty, if entityMatchers are used
+# 参考github.com\hyperledger\fabric-sdk-go\pkg\core\config\testdata\config_test_entity_matchers.yaml
 entityMatchers:
+  # 这里需要对orderer进行host映射，因为gosdk发送tx后，会从peer执行ChincodeID为csss的QUERY，名为GetConfigBlock
+  # 会得到一个orderer地址，但这个地址可能不是有效的域名，就需要用到这里的映射
+  # pattern用正则表达式进行匹配
+  # urlSubstitutionExp 这里写真实的orderer地址
   orderer:
    - pattern: orderer #(\w+).example.(\w+)
-     urlSubstitutionExp: 18.182.20.88:7050
+     urlSubstitutionExp: orderer0.orderer.example.com:7050
      #grpc://localhost:7050
      #  sslTargetOverrideUrlSubstitutionExp: orderer.example.com
-     mappedHost: orderer
+     # mappedHost: orderer

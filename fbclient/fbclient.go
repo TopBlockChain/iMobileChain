@@ -29,10 +29,9 @@ func New(ChannelID string,OrgName string,OrgAdmin string,OrderOrgName string,CCI
 	configOpt:=config.FromFile(ConfigPath)
 	sdk, err := fabsdk.New(configOpt,sdkOpts...)
    if err != nil {
-				
 		fmt.Println("SDK创建失败", err)
 	}
-	clientChannelContext := sdk.ChannelContext(ChannelID, fabsdk.WithUser(OrgName), fabsdk.WithOrg(OrgName))
+	clientChannelContext := sdk.ChannelContext(ChannelID, fabsdk.WithUser("testuser"), fabsdk.WithOrg(OrgName))
 	client, err := channel.New(clientChannelContext)
 	ledclient, err1 := ledger.New(clientChannelContext)
 	if err != nil {

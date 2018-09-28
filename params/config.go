@@ -24,8 +24,8 @@ import (
 )
 // fblcient的相关参数定义
 var (
-	ChannelID      = "myc"
-	OrgName        = "DEFAULT"
+	ChannelID      = "mychannel" //注意yaml配置文件也需要设置成这样子
+	OrgName        = "Org1MSP"   //注意yaml配置文件也需要设置成这样子
 	OrgAdmin       = "SampleOrg"
 	OrdererOrgName = "SampleOrg"
 	CcID           = "mycc"
@@ -41,6 +41,10 @@ var (
 //Unconfirmed_block=make(map[uint64]RegistryBlock)
 //POSMINER相关定义
 var (
+	PosMinerContractAddr = common.HexToAddress("0x8C00B660792b235d4382368299E77C8c04ED4754") //POSMINER合约地址
+	DefaulMinerAddr1     = common.HexToAddress("0x3656e9ce021f6454906687ff615915235f8e510f") //矿池矿工为0时的缺省封装地址
+	DefaulMinerAddr2     = common.HexToAddress("0xac9d739c4d83e3501d824c4e308e7812aba8306d") //矿池矿工为0时的缺省封装地址
+	DefaulMinerAddr3     = common.HexToAddress("0xed867421dabc9dc2785e54411497ae2327f28dfe") //矿池矿工为0时的缺省封装地址
 	BlockProcessingTime  = int(15)                                                           //缺省区块处理时间为15秒
 	AveragyWattingTime   = int(10)                                                           //等待间隔为5秒
 )
