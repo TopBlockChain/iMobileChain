@@ -81,7 +81,7 @@ func (Fbc *Fbclient)GetMobileMinners(getPoolWinnersArgs [][]byte) (resp string, 
 	MobileMinerQueryRep:=string(response.Payload)
    	return MobileMinerQueryRep,err
 }
-//移动矿工挖矿invoke方法
+//移动矿工挖矿invoke方法addMobileMiningEvent
 func  (Fbc *Fbclient)AddMobileMiningEvent(addMobileMiningArgs [][]byte) error {
 	_, err :=Fbc.channelClient.Execute(channel.Request{ChaincodeID: Fbc.ccID, Fcn: "addMobileMiningEvent", Args: addMobileMiningArgs},
 		channel.WithRetry(retry.DefaultChannelOpts))

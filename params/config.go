@@ -43,7 +43,7 @@ var (
 var (
 	PosMinerContractAddr = common.HexToAddress("0x8C00B660792b235d4382368299E77C8c04ED4754") //POSMINER合约地址
 	DefaulMinerAddr1     = common.HexToAddress("0x3656e9ce021f6454906687ff615915235f8e510f") //矿池矿工为0时的缺省封装地址
-	DefaulMinerAddr2     = common.HexToAddress("0xac9d739c4d83e3501d824c4e308e7812aba8306d") //矿池矿工为0时的缺省封装地址
+	DefaulMinerAddr2     = common.HexToAddress("0xD423495acb3CbDC5377CDf83daE7eA140DB07933") //矿池矿工为0时的缺省封装地址
 	DefaulMinerAddr3     = common.HexToAddress("0xed867421dabc9dc2785e54411497ae2327f28dfe") //矿池矿工为0时的缺省封装地址
 	BlockProcessingTime  = int(15)                                                           //缺省区块处理时间为15秒
 	AveragyWattingTime   = int(10)                                                           //等待间隔为5秒

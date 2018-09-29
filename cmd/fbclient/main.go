@@ -48,18 +48,18 @@ const (
 
 func main() {
 	var Fbc *fbclient.Fbclient
-	fbclient: fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path),
+    //fbclient:=fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path),
 
 	Fbc=fbclient.New(channelID,orgName,orgAdmin,ordererOrgName,ccID,path)
 	go clientMine(Fbc,1,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr2.String()) //模拟终端一
-	go clientMine(Fbc,2,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr3.String()) //模拟终端二
-	go clientMine(Fbc,3,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr1.String()) //模拟终端三
-	go clientMine(Fbc,4,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr1.String()) //模拟终端一
-	go clientMine(Fbc,5,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr2.String()) //模拟终端二
-	go clientMine(Fbc,6,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr3.String()) //模拟终端三
-	go clientMine(Fbc,7,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr3.String()) //模拟终端一
-	go clientMine(Fbc,8,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr1.String()) //模拟终端二
-	go clientMine(Fbc,9,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr2.String()) //模拟终端三
+	// go clientMine(Fbc,2,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr3.String()) //模拟终端二
+	// go clientMine(Fbc,3,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr1.String()) //模拟终端三
+	// go clientMine(Fbc,4,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr1.String()) //模拟终端一
+	// go clientMine(Fbc,5,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr2.String()) //模拟终端二
+	// go clientMine(Fbc,6,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr3.String()) //模拟终端三
+	// go clientMine(Fbc,7,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr3.String()) //模拟终端一
+	// go clientMine(Fbc,8,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr1.String()) //模拟终端二
+	// go clientMine(Fbc,9,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr2.String()) //模拟终端三
 
     TestMine(Fbc)
 	//CurentMineWiner(Fbc)  //区块生成模拟
