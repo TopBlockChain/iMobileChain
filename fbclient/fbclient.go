@@ -109,7 +109,7 @@ func (Fbc *Fbclient)Str2Adrr(value string)[]string {
 	return miners
 } 
 //Waiting time query 根据矿工在当前侯选矿工列表中的位置，计算其标准等待时间。
-func (Fbc *Fbclient)WaitTime(Miners []string, Coinbase string) (Duration int64) {
+func (Fbc *Fbclient)WaitTime(Miners []string, Coinbase string,blocknumber uint64) (Duration int64) {
 	//var Duration = int64(0)
 	//根据Coinbase在侯选矿工中的位置决定其等待时间
    for i:=0;i<len(Miners);i++{
@@ -118,7 +118,7 @@ func (Fbc *Fbclient)WaitTime(Miners []string, Coinbase string) (Duration int64) 
 		   return Duration  
 	   }
    }
-   Duration = int64(params.BlockProcessingTime + params.AveragyWattingTime*4)
+   Duration = int64(params.BlockProcessingTime + params.AveragyWattingTime*3)+int64(HashNumber(int64(params.AveragyWattingTime),Coinbase+string(blocknumber)))
    return Duration
 }
 func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint64) (Candidates []string, diff int64, err error) { 
@@ -143,7 +143,7 @@ func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint
 	}
 	//fmt.Println("miners",len(Miners),Miners)
     for j:=uint64(0);j<3&&j<uint64(len(Miners));j++{
-		candidates=append(candidates,Miners[HashNumber(int64(len(Miners)),Seed+j)])
+		candidates=append(candidates,Miners[HashNumber(int64(len(Miners)),string(Seed+j))])
 	}
  	return candidates,int64(len(Miners)+1),nil
 }
@@ -182,8 +182,8 @@ func (Fbc *Fbclient)CurfbNumber() (CurNum uint64,err error) {
 	
 	return ledgerInfo.BCI.Height-1,nil
 }
-func HashNumber(Number int64, seed uint64,) uint64{
-	s:=string(seed)   //以当前区块作为哈希计算的内容
+func HashNumber(Number int64, seed string) uint64{
+	s:=seed   //以当前区块作为哈希计算的内容
  	h :=  sha3.New256()
 	h.Write([]byte(s))
 	bs := h.Sum(nil)

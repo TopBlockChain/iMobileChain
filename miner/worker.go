@@ -598,7 +598,7 @@ func (w *worker) mine(block *types.Block, abort chan struct{}, found chan *types
 	headertime := int64(float64(block.Time().Int64()) - float64(params.BlockProcessingTime)*float64(block.GasUsed())/float64(block.GasLimit()))
 	if now := time.Now().Unix(); headertime > now {
 		wait = time.Duration(headertime-now) * time.Second
-		//log.Info("处理延时", "等待...", common.PrettyDuration(wait), "now", now, "headertime", headertime, "blocktime", block.Time().Int64())
+		log.Info("处理延时", "等待...", common.PrettyDuration(wait), "now", now, "headertime", headertime, "blocktime", block.Time().Int64())
 	}
 	var header = block.Header()
 	header = types.CopyHeader(header)
@@ -963,7 +963,7 @@ func (w *worker) commitNewWork(interrupt *int32, noempty bool, timestamp int64) 
 		  //params.Unconfirmed_block[CurrentBlocknumber.Uint64()]=RegBlock
 		//   delete(params.Unconfirmed_block,CurrentBlocknumber.Uint64()-uint64(12)) //删除已过时的登记区块信息
 	    //   //MinersCondidate:=w.fbclient.Str2Adrr(Resp1)    //查询数据转换为地址列表
-	      duration=w.fbclient.WaitTime(Resp1,w.coinbase.String())   //计算等待时间
+	      duration=w.fbclient.WaitTime(Resp1,w.coinbase.String(),CurrentBlocknumber.Uint64())   //计算等待时间
    }else{
 		 //duration=int64(params.BlockProcessingTime + params.AveragyWattingTime*4)
 		 fmt.Println("无法联接到合约链，错误码：",err0)

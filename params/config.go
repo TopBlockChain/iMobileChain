@@ -41,10 +41,17 @@ var (
 //Unconfirmed_block=make(map[uint64]RegistryBlock)
 //POSMINER相关定义
 var (
-	PosMinerContractAddr = common.HexToAddress("0x8C00B660792b235d4382368299E77C8c04ED4754") //POSMINER合约地址
-	DefaulMinerAddr1     = common.HexToAddress("0x3656e9ce021f6454906687ff615915235f8e510f") //矿池矿工为0时的缺省封装地址
-	DefaulMinerAddr2     = common.HexToAddress("0xD423495acb3CbDC5377CDf83daE7eA140DB07933") //矿池矿工为0时的缺省封装地址
-	DefaulMinerAddr3     = common.HexToAddress("0xed867421dabc9dc2785e54411497ae2327f28dfe") //矿池矿工为0时的缺省封装地址
+	MinerPool1 = common.HexToAddress("0xf9843cb853440db96fd263d7dc10757e55f78180") //POSMINER合约地址
+	MinerPool2     = common.HexToAddress("0x87a8aa7fd4b28d73bbe45be7aa03b3dbf20a15b8") //矿池矿工为0时的缺省封装地址
+	MinerPool3     = common.HexToAddress("0x1865b595828e06516d095405f7968c443ab4ce36") //矿池矿工为0时的缺省封装地址
+	MinerPool4     = common.HexToAddress("0xe8801197a8d3ec60d75f2a2076c3b2f74074c6b2") //矿池矿工为0时的缺省封装地址
+	MinerPool5     = common.HexToAddress("0x5bafe044a9c413995c3b2a60aaff15beadb078de") //矿池矿工为0时的缺省封装地址
+	Miner1     = common.HexToAddress("0xcae637667678cf51c56051b5fbc1514e74b4171c") //矿池矿工为0时的缺省封装地址
+	Miner2     = common.HexToAddress("0xf90b64f471ce67ded2b437ef2e22fa840fb86c52") //矿池矿工为0时的缺省封装地址
+	Miner3     = common.HexToAddress("0xf0f51d4d8ce7c65d7a760013ac2b66e2bc205532") //矿池矿工为0时的缺省封装地址
+	Miner4     = common.HexToAddress("0x8fe256e9f0816915c10c5b1138d11d8456e0b48f") //矿池矿工为0时的缺省封装地址
+	Miner5     = common.HexToAddress("0x0d98fec287fa8e378032ddf06c72e61e1a42a85f") //矿池矿工为0时的缺省封装地址
+
 	BlockProcessingTime  = int(15)                                                           //缺省区块处理时间为15秒
 	AveragyWattingTime   = int(10)                                                           //等待间隔为5秒
 )

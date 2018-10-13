@@ -51,16 +51,11 @@ func main() {
     //fbclient:=fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path),
 
 	Fbc=fbclient.New(channelID,orgName,orgAdmin,ordererOrgName,ccID,path)
-	go clientMine(Fbc,1,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr2.String()) //模拟终端一
-	// go clientMine(Fbc,2,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr3.String()) //模拟终端二
-	// go clientMine(Fbc,3,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr1.String()) //模拟终端三
-	// go clientMine(Fbc,4,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr1.String()) //模拟终端一
-	// go clientMine(Fbc,5,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr2.String()) //模拟终端二
-	// go clientMine(Fbc,6,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr3.String()) //模拟终端三
-	// go clientMine(Fbc,7,params.DefaulMinerAddr1.String(),params.DefaulMinerAddr3.String()) //模拟终端一
-	// go clientMine(Fbc,8,params.DefaulMinerAddr2.String(),params.DefaulMinerAddr1.String()) //模拟终端二
-	// go clientMine(Fbc,9,params.DefaulMinerAddr3.String(),params.DefaulMinerAddr2.String()) //模拟终端三
-
+	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,3,params.Miner3.String(),params.MinerPool3.String()) //模拟终端一
+	go clientMine(Fbc,4,params.Miner4.String(),params.MinerPool4.String()) //模拟终端一
+	go clientMine(Fbc,5,params.Miner5.String(),params.MinerPool5.String()) //模拟终端一
     TestMine(Fbc)
 	//CurentMineWiner(Fbc)  //区块生成模拟
 
@@ -128,7 +123,7 @@ func CurentMineWiner(fbc *fbclient.Fbclient){
         fmt.Println("前一区块时间：",PrevTime,"当前区块时间",CurrentTime)
 		fmt.Println("----------------------候选矿工列表-----------------------：")
 		for i,_:=range value1 {
-			waittime:=fbc.WaitTime(value1,value1[i])
+			waittime:=fbc.WaitTime(value1,value1[i],uint64(i))
 			fmt.Println("账户：",common.HexToAddress(value1[i]).String(),"等待时间：",waittime)
 		}
 		fmt.Println("--------------------奖励移动矿工列表---------------------：")

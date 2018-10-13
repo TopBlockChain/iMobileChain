@@ -260,7 +260,7 @@ func (ethash *Ethash) verifyHeader(chain consensus.ChainReader, header, parent *
 		    return errZeroBlockTime
 	    }
 	    //MinersCondidate:=ethash.fbclient.Str2Adrr(Resp)    //查询数据转换为地址列表
-		duration=ethash.fbclient.WaitTime(Resp,header.Coinbase.String())   //计算等待时间
+		duration=ethash.fbclient.WaitTime(Resp,header.Coinbase.String(),header.Number.Uint64())   //计算等待时间
 	}else{
 		duration=int64(params.BlockProcessingTime + params.AveragyWattingTime*4)
 	}
