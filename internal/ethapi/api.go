@@ -44,6 +44,9 @@ import (
 	"github.com/blockchain/imobilechain/rpc"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/util"
+
+	"github.com/blockchain/imobilechain/fbclient"
+
 )
 
 const (
@@ -943,11 +946,12 @@ func newRPCTransactionFromBlockHash(b *types.Block, hash common.Hash) *RPCTransa
 type PublicTransactionPoolAPI struct {
 	b         Backend
 	nonceLock *AddrLocker
+	fbclient *fbclient.Fbclient	
 }
 
 // NewPublicTransactionPoolAPI creates a new RPC service with methods specific for the transaction pool.
 func NewPublicTransactionPoolAPI(b Backend, nonceLock *AddrLocker) *PublicTransactionPoolAPI {
-	return &PublicTransactionPoolAPI{b, nonceLock}
+	return &PublicTransactionPoolAPI{b, nonceLock,fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path)}
 }
 
 // GetBlockTransactionCountByNumber returns the number of transactions in the block with the given block number.
@@ -1191,6 +1195,25 @@ func submitTransaction(ctx context.Context, b Backend, tx *types.Transaction) (c
 	} else {
 		log.Info("Submitted transaction", "fullhash", tx.Hash().Hex(), "recipient", tx.To())
 	}
+	// signer := types.MakeSigner(b.ChainConfig(), b.CurrentBlock().Number())
+	// from, _ := types.Sender(signer, tx)
+	// fmt.Println("from:",from.Big().Uint64(),"to:",tx.Value().Uint64())
+	// if from.Big().Uint64()==tx.Value().Uint64(){
+	// 	//此处增加对挖矿接口的调用
+	// 	var Fbc *fbclient.Fbclient
+	// 	//fbclient:=fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path),
+	// 	Fbc=fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path)
+		
+	// 	var addEventArgs = [][]byte{[]byte(from.String()), []byte(tx.To().String())}
+	// 	err:=Fbc.AddMobileMiningEvent(addEventArgs)
+	// 	if err!=nil{
+	// 		  fmt.Println("移动挖矿失败",err)
+	// 	}else{
+    //          log.Info("MobileMining","Mobile Miner",from.String(),"MinerPool",tx.To().String())
+	// 	}
+	// 	return tx.Hash(), nil		
+	// }
+	// fmt.Println("from:",from.Big().Uint64(),"to:",tx.Value().Uint64())
 	return tx.Hash(), nil
 }
 
@@ -1238,6 +1261,26 @@ func (s *PublicTransactionPoolAPI) SendRawTransaction(ctx context.Context, encod
 	if err := rlp.DecodeBytes(encodedTx, tx); err != nil {
 		return common.Hash{}, err
 	}
+    //此处增加移动挖矿接口功能,若数据项为矿工自身，则调用移动挖矿功能
+    signer := types.MakeSigner(s.b.ChainConfig(), s.b.CurrentBlock().Number())
+    from, err := types.Sender(signer, tx)
+    if err != nil {
+	   return common.Hash{}, err
+	}
+	fmt.Println("from:",from.Big().Uint64(),"to:",tx.Value().Uint64())
+	//将地址转换为大数，以wei为单位作为transaction的值封装入交易
+	if from.Big().Uint64()==tx.Value().Uint64(){
+	//此处增加对挖矿接口的调用
+	    var addEventArgs = [][]byte{[]byte(from.String()), []byte(tx.To().String())}
+	    err:=s.fbclient.AddMobileMiningEvent(addEventArgs)
+	    if err!=nil{
+		   fmt.Println("移动挖矿失败",err)
+		}else{
+			log.Info("MobileMining","Mobile Miner",from.String(),"MinerPool",tx.To().String())
+		}
+		return tx.Hash(), nil		
+    }
+
 	return submitTransaction(ctx, s.b, tx)
 }
 

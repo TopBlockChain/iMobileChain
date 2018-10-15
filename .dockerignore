@@ -1,5 +1,6 @@
 **/.git
 .git
+.exe
 !.git/HEAD
 !.git/refs/heads
 **/*_test.go
