@@ -1,0 +1,228 @@
+version: 1.0.0
+
+client:
+  organization: Org1
+  channelID: mychannel
+  chainCodeID: mycc
+  userName: admin
+  currpeers: peer0.org1.t1.imobilechain.org:7051,peer0.org2.t1.imobilechain.org:7051
+  logging:
+    level: INFO
+  credentialStore:
+    path: /tmp/state-store
+    cryptoStore:
+      path: /tmp/msp
+  BCCSP:
+    security:
+     enabled: true
+     default:
+      provider: "SW"
+     hashAlgorithm: "SHA2"
+     softVerify: true
+     ephemeral: false
+     level: 256
+
+channels:
+  mychannel:
+    peers:
+      peer0.org1.t1.imobilechain.org:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org2.t1.imobilechain.org:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org3.t1.imobilechain.org:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+    policies:
+      queryChannelConfig:
+        minResponses: 1
+        maxTargets: 1
+        retryOpts:
+          attempts: 5
+          initialBackoff: 500ms
+          maxBackoff: 5s
+          backoffFactor: 2.0
+
+organizations:
+  OrdererOrg:
+    mspid: OrdererMSP
+    cryptoPath: fabric-ca-files-1.1.3/orderer.t1.imobilechain.org/msp
+    users:
+      admin:
+        cert:
+          path: fabric-ca-files-1.1.3/orderer.t1.imobilechain.org/admin/msp/signcerts/sign.cert
+        key:
+          path: fabric-ca-files-1.1.3/orderer.t1.imobilechain.org/admin/msp/keystore/sign.key
+    certificateAuthorities:
+      - ca.orderer.t1.imobilechain.org
+
+  Org1:
+    mspid: Org1MSP
+    cryptoPath: fabric-ca-files-1.1.3/org1.t1.imobilechain.org/msp
+    users:
+      admin:
+        cert:
+          path: fabric-ca-files-1.1.3/org1.t1.imobilechain.org/admin/msp/signcerts/sign.cert
+        key:
+          path: fabric-ca-files-1.1.3/org1.t1.imobilechain.org/admin/msp/keystore/sign.key
+      imcuser:
+        cert:
+          path: imcuser-1.1.3/msp/signcerts/sign.cert
+        key:
+          path: imcuser-1.1.3/msp/keystore/sign.key
+    peers:
+      - peer0.org1.t1.imobilechain.org
+    certificateAuthorities:
+      - ca.org1.t1.imobilechain.org
+
+  Org2:
+    mspid: Org2MSP
+    cryptoPath: fabric-ca-files-1.1.3/org2.t1.imobilechain.org/msp
+    users:
+      admin:
+        cert:
+          path: fabric-ca-files-1.1.3/org2.t1.imobilechain.org/admin/msp/signcerts/sign.cert
+        key:
+          path: fabric-ca-files-1.1.3/org2.t1.imobilechain.org/admin/msp/keystore/sign.key
+      imcuser:
+        cert:
+          path: imcuser-1.1.3/msp/signcerts/sign.cert
+        key:
+          path: imcuser-1.1.3/msp/keystore/sign.key
+    peers:
+      - peer0.org2.t1.imobilechain.org
+    certificateAuthorities:
+      - ca.org2.t1.imobilechain.org
+
+  Org3:
+    mspid: Org3MSP
+    cryptoPath: fabric-ca-files-1.1.3/org3.t1.imobilechain.org/msp
+    users:
+      admin:
+        cert:
+          path: fabric-ca-files-1.1.3/org3.t1.imobilechain.org/admin/msp/signcerts/sign.cert
+        key:
+          path: fabric-ca-files-1.1.3/org3.t1.imobilechain.org/admin/msp/keystore/sign.key
+      imcuser:
+        cert:
+          path: imcuser-1.1.3/msp/signcerts/sign.cert
+        key:
+          path: imcuser-1.1.3/msp/keystore/sign.key
+    peers:
+      - peer0.org3.t1.imobilechain.org
+    certificateAuthorities:
+      - ca.org3.t1.imobilechain.org
+
+orderers:
+  _default:
+    grpcOptions:
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+
+  orderer0.orderer.t1.imobilechain.org:
+    url: orderer0.orderer.t1.imobilechain.org:7050
+    tlsCACerts:
+      path: fabric-ca-files-1.1.3/orderer.t1.imobilechain.org/orderer0/tls/tlsca.cert
+
+  orderer1.orderer.t1.imobilechain.org:
+    url: orderer1.orderer.t1.imobilechain.org:7050
+    tlsCACerts:
+      path: fabric-ca-files-1.1.3/orderer.t1.imobilechain.org/orderer1/tls/tlsca.cert
+
+  orderer2.orderer.t1.imobilechain.org:
+    url: orderer2.orderer.t1.imobilechain.org:7050
+    tlsCACerts:
+      path: fabric-ca-files-1.1.3/orderer.t1.imobilechain.org/orderer2/tls/tlsca.cert
+
+peers:
+  _default:
+    grpcOptions:
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      allow-insecure: false
+
+  peer0.org1.t1.imobilechain.org:
+    url: peer0.org1.t1.imobilechain.org:7051
+    eventUrl: peer0.org1.t1.imobilechain.org:7053
+    tlsCACerts:
+      path: fabric-ca-files-1.1.3/org1.t1.imobilechain.org/peer0/tls/tlsca.cert
+
+  peer0.org2.t1.imobilechain.org:
+    url: peer0.org2.t1.imobilechain.org:7051
+    eventUrl: peer0.org2.t1.imobilechain.org:7053
+    tlsCACerts:
+      path: fabric-ca-files-1.1.3/org2.t1.imobilechain.org/peer0/tls/tlsca.cert
+
+  peer0.org3.t1.imobilechain.org:
+    url: peer0.org3.t1.imobilechain.org:7051
+    eventUrl: peer0.org3.t1.imobilechain.org:7053
+    tlsCACerts:
+      path: fabric-ca-files-1.1.3/org3.t1.imobilechain.org/peer0/tls/tlsca.cert
+
+certificateAuthorities:
+   ca.orderer.t1.imobilechain.org:
+     url: https://ca.orderer.t1.imobilechain.org:7054
+     tlsCACerts:
+       path: fabric-ca-files-1.1.3/adminOrdererOrg/msp/cacerts/signca.cert
+       client:
+         cert:
+           path: fabric-ca-files-1.1.3/adminOrdererOrg/msp/signcerts/sign.cert
+         key:
+           path: fabric-ca-files-1.1.3/adminOrdererOrg/msp/keystore/sign.key
+     registrar:
+       enrollId: adminOrdererOrg
+       enrollSecret: asdf1234
+
+   ca.org1.t1.imobilechain.org:
+     url: https://ca.org1.t1.imobilechain.org:7054
+     tlsCACerts:
+       path: fabric-ca-files-1.1.3/adminOrg1/msp/cacerts/signca.cert
+       client:
+         cert:
+           path: fabric-ca-files-1.1.3/adminOrg1/msp/signcerts/sign.cert
+         key:
+           path: fabric-ca-files-1.1.3/adminOrg1/msp/keystore/sign.key
+     registrar:
+       enrollId: adminOrg1
+       enrollSecret: asdf1234
+
+   ca.org2.t1.imobilechain.org:
+     url: https://ca.org2.t1.imobilechain.org:7054
+     tlsCACerts:
+       path: fabric-ca-files-1.1.3/adminOrg2/msp/cacerts/signca.cert
+       client:
+         cert:
+           path: fabric-ca-files-1.1.3/adminOrg2/msp/signcerts/sign.cert
+         key:
+           path: fabric-ca-files-1.1.3/adminOrg2/msp/keystore/sign.key
+     registrar:
+       enrollId: adminOrg2
+       enrollSecret: asdf1234
+
+   ca.org3.t1.imobilechain.org:
+     url: https://ca.org3.t1.imobilechain.org:7054
+     tlsCACerts:
+       path: fabric-ca-files-1.1.3/adminOrg3/msp/cacerts/signca.cert
+       client:
+         cert:
+           path: fabric-ca-files-1.1.3/adminOrg3/msp/signcerts/sign.cert
+         key:
+           path: fabric-ca-files-1.1.3/adminOrg3/msp/keystore/sign.key
+     registrar:
+       enrollId: adminOrg3
+       enrollSecret: asdf1234

@@ -1,0 +1,10 @@
+peer:
+    tls:
+        enabled: true
+        clientAuthRequired: false
+        cert:
+            file: ./tls/tls.cert
+        key:
+            file: ./tls/tls.key
+        rootcert:
+            file: ./tls/tlsca.cert
