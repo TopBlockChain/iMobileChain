@@ -498,7 +498,7 @@ func New(config Config, notify []string, noverify bool) *Ethash {
 		fetchRateCh:  make(chan chan uint64),
 		submitRateCh: make(chan *hashrate),
 		exitCh:       make(chan chan error),
-		fbclient: fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path),
+		fbclient: fbclient.New(params.Path),
 	}
 	go ethash.remote(notify, noverify)
 	return ethash

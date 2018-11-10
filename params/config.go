@@ -24,12 +24,12 @@ import (
 )
 // fblcient的相关参数定义
 var (
-	ChannelID      = "mychannel" //注意yaml配置文件也需要设置成这样子
-	OrgName        = "Org1MSP"   //注意yaml配置文件也需要设置成这样子
-	OrgAdmin       = "SampleOrg"
-	OrdererOrgName = "SampleOrg"
-	CcID           = "mycc"
-	Path ="imc.yaml"
+	// ChannelID      = "mychannel" //注意yaml配置文件也需要设置成这样子
+	// OrgName        = "Org1MSP"   //注意yaml配置文件也需要设置成这样子
+	// OrgAdmin       = "SampleOrg"
+	// OrdererOrgName = "SampleOrg"
+	// CcID           = "mycc"
+	Path ="fabric-sdk-config.yaml"
 )
 // type RegistryBlock struct{
 // 	PrevTime string

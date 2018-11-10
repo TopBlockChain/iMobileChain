@@ -20,21 +20,19 @@ package main
 import (
 	"fmt"
 	"time"
-	"strconv"
 	
 	"github.com/blockchain/imobilechain/fbclient"
-	"github.com/blockchain/imobilechain/params"
-	"github.com/blockchain/imobilechain/common"
+    "github.com/blockchain/imobilechain/params"
 
 )
 const (
 	
-		channelID      = "mychannel" //注意yaml配置文件也需要设置成这样子
-		orgName        = "Org1MSP"   //注意yaml配置文件也需要设置成这样子
-		orgAdmin       = "SampleOrg"
-		ordererOrgName = "SampleOrg"
-		ccID           = "mycc"
-		path ="imc.yaml"
+		// channelID      = "mychannel" //注意yaml配置文件也需要设置成这样子
+		// orgName        = "Org1MSP"   //注意yaml配置文件也需要设置成这样子
+		// orgAdmin       = "SampleOrg"
+		// ordererOrgName = "SampleOrg"
+		// ccID           = "mycc"
+		path ="fabric-sdk-config.yaml"
 	
 )
 
@@ -48,9 +46,11 @@ const (
 
 func main() {
 	var Fbc *fbclient.Fbclient
-    //fbclient:=fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path),
+  	Fbc=fbclient.New(path)
+	//ledgclient:=fbclient.CreateLedgerClient(fbclient.Fbclient.Fsdk)
+//	curnum,_:=Fbc.CurfbNumber()
+	fmt.Println("allpeers",Fbc.AllPeers,"selectpeers",Fbc.SelectPeers,"currentpeers",Fbc.CurPeers)
 
-	Fbc=fbclient.New(channelID,orgName,orgAdmin,ordererOrgName,ccID,path)
 	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
 	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
 	go clientMine(Fbc,3,params.Miner3.String(),params.MinerPool3.String()) //模拟终端一
@@ -69,7 +69,10 @@ func clientMine(fbc *fbclient.Fbclient,num int,user string,miner string){
 		if err==nil{
 			fmt.Println("--------------------移动矿工挖矿信息---------------------：")
 			fmt.Println("模拟终端：",num,"  挖矿次数",i,"  移动矿工",user,"矿池：",miner,"状态: 成功")	
+		}else{
+			fmt.Println("挖矿未能成功：",err)
 		}
+
 		i++	
 	}
 }
@@ -85,62 +88,21 @@ func clientMine(fbc *fbclient.Fbclient,num int,user string,miner string){
 // 	}
 // }
 func TestMine(fbc *fbclient.Fbclient){
-	curnum,_:=fbc.CurfbNumber()
-	fmt.Println("当前区块号",curnum)
+	//curnum,_:=fbclient.CurfbNumber(fbclient.Fbclient.LedgerClient,fbclient.Fbclient.AllPeers)
+	//fmt.Println("当前区块号",curnum)
 	prevnum,_:=fbc.CurfbNumber()
 	var i=uint64(0)
 	for {
 		fmt.Println("------------------------资产链区块号",i,"-------------------------：")
 		curnum,_:=fbc.CurfbNumber()
 		Miners,_,_:=fbc.CandidateMiners(prevnum,curnum,i)
-		fmt.Println("------------------------候选矿池账号-------------------------：")
+		fmt.Println("------------------------候选矿池账号-------------------------：",curnum)
 		fmt.Println("CandidateMiners:",Miners)
 		MobileMiners,_:=fbc.RewardMobileMiners(prevnum,curnum)
-		fmt.Println("----------------------待奖励移动矿工账号-------------------------：")
+		fmt.Println("----------------------待奖励移动矿工账号-------------------------：",curnum)
 		fmt.Println("MobileMiners:",MobileMiners)
 		time.Sleep(15*time.Second)
 		prevnum=curnum
 		i++  
 	}
 }
-
-
-
-
-func CurentMineWiner(fbc *fbclient.Fbclient){
-	PrevTime,_:=fbc.GetLatestMobileMiningEventTime()
-	CurrentTime,_:=fbc.GetLatestMobileMiningEventTime()
-	for i:=0;i<1000;i++ {
-		var getPoolWinnersArgs = [][]byte{[]byte(PrevTime), []byte(CurrentTime), []byte(strconv.Itoa(i)), []byte("3")}
-		poolvalue,_:=fbc.GetPoolWinners(getPoolWinnersArgs)
-		value1:=fbc.Str2Adrr(poolvalue)
-		var getMobileMiningArgs = [][]byte{[]byte(PrevTime), []byte(CurrentTime),[]byte(strconv.Itoa(i))}
-		mobilevalue,_:=fbc.GetMobileMinners(getMobileMiningArgs)
-		value2:=fbc.Str2Adrr(mobilevalue)
-		fmt.Println("------------------------区块号-------------------------：")
-		fmt.Println("当前区块号：",i)
-		fmt.Println("------------------------区块时间------------------------：")
-        fmt.Println("前一区块时间：",PrevTime,"当前区块时间",CurrentTime)
-		fmt.Println("----------------------候选矿工列表-----------------------：")
-		for i,_:=range value1 {
-			waittime:=fbc.WaitTime(value1,value1[i],uint64(i))
-			fmt.Println("账户：",common.HexToAddress(value1[i]).String(),"等待时间：",waittime)
-		}
-		fmt.Println("--------------------奖励移动矿工列表---------------------：")
-		//fmt.Println(value2)
-		for i,_:=range value2 {
-			fmt.Println(value2[i])
-		}
-		time.Sleep(15*time.Second)
-		var registerBlockSealArgs=[][]byte{[]byte(PrevTime),[]byte(CurrentTime),[]byte(strconv.Itoa(i)),[]byte(poolvalue),[]byte(mobilevalue)}
-		err:=fbc.RegisterBlockSeal(registerBlockSealArgs)
-		if err==nil{
-		    fmt.Println("--------------------区块注册信息---------------------：")
-		    fmt.Println("区块号：",i,"  区块时间",CurrentTime," 候选矿工 ",value1," 移动矿工：",value2,"状态: 成功")	
-		}
-		PrevTime=CurrentTime
-		CurrentTime,_=fbc.GetLatestMobileMiningEventTime()
-
-	}
-}
-

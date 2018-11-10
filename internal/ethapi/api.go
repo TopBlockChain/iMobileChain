@@ -951,7 +951,7 @@ type PublicTransactionPoolAPI struct {
 
 // NewPublicTransactionPoolAPI creates a new RPC service with methods specific for the transaction pool.
 func NewPublicTransactionPoolAPI(b Backend, nonceLock *AddrLocker) *PublicTransactionPoolAPI {
-	return &PublicTransactionPoolAPI{b, nonceLock,fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path)}
+	return &PublicTransactionPoolAPI{b, nonceLock,fbclient.New(params.Path)}
 }
 
 // GetBlockTransactionCountByNumber returns the number of transactions in the block with the given block number.

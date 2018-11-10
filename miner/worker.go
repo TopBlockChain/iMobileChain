@@ -202,7 +202,7 @@ func newWorker(config *params.ChainConfig, engine consensus.Engine, eth Backend,
 		startCh:            make(chan struct{}, 1),
 		resubmitIntervalCh: make(chan time.Duration),
 		resubmitAdjustCh:   make(chan *intervalAdjust, resubmitAdjustChanSize),
-		fbclient: fbclient.New(params.ChannelID,params.OrgName,params.OrgAdmin,params.OrdererOrgName,params.CcID,params.Path),
+		fbclient: fbclient.New(params.Path),
 	}
 	// Subscribe NewTxsEvent for tx pool
 	worker.txsSub = eth.TxPool().SubscribeNewTxsEvent(worker.txsCh)
