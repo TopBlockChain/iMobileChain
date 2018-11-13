@@ -182,7 +182,7 @@ func  (Fbc *Fbclient)AddMobileMiningEvent(addMobileMiningArgs [][]byte) error {
 	peers = append(peers, Fbc.SelectPeers...)
 	opts = append(opts, channel.WithTargets(peers...))
 	//fmt.Println(Fbc.ccID,peers)
-	_, err :=Fbc.channelClient.Execute(channel.Request{ChaincodeID: Fbc.ccID, Fcn: "addMobileMiningEventToArray", Args: addMobileMiningArgs},
+	_, err :=Fbc.channelClient.Execute(channel.Request{ChaincodeID: Fbc.ccID, Fcn: "addMobileMiningEvent", Args: addMobileMiningArgs},
 		opts...)
 	if err != nil {
 	    fmt.Println(err)
@@ -238,11 +238,11 @@ func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint
 		 }
 		for _,value:=range block.Data.Data{
 		   AddStr:=string(value)
-		   if !strings.Contains(AddStr,"addMobileMiningEventToArray"){
+		   if !strings.Contains(AddStr,"addMobileMiningEvent"){
 			  continue
 		   }
-		   AddIndex:=strings.Index(AddStr,"addMobileMiningEventToArray")
-		   Miners=append(Miners,AddStr[(AddIndex+73):(AddIndex+115)])
+		   AddIndex:=strings.Index(AddStr,"addMobileMiningEvent")
+		   Miners=append(Miners,AddStr[(AddIndex+66):(AddIndex+108)])
 		}
 	}
 	for j:=uint64(0);j<3&&j<uint64(len(Miners));j++{
@@ -260,11 +260,11 @@ func (Fbc *Fbclient)RewardMobileMiners(PrevNumber uint64,CurNumber uint64) (MobM
 	    }
 	   for _,value:=range block.Data.Data{
 		   AddStr:=string(value)
-		   if !strings.Contains(AddStr,"addMobileMiningEventToArray"){
+		   if !strings.Contains(AddStr,"addMobileMiningEvent"){
 			  continue
 		   }
-		   AddIndex:=strings.Index(AddStr,"addMobileMiningEventToArray")
-		   MobMiners=append(MobMiners,AddStr[(AddIndex+29):(AddIndex+71)])
+		   AddIndex:=strings.Index(AddStr,"addMobileMiningEvent")
+		   MobMiners=append(MobMiners,AddStr[(AddIndex+22):(AddIndex+64)])
 		}
 	}
     return MobMiners,nil

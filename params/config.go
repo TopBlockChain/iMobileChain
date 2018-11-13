@@ -50,7 +50,7 @@ var (
 	Miner2     = common.HexToAddress("0xf90b64f471ce67ded2b437ef2e22fa840fb86c52") //矿池矿工为0时的缺省封装地址
 	Miner3     = common.HexToAddress("0xf0f51d4d8ce7c65d7a760013ac2b66e2bc205532") //矿池矿工为0时的缺省封装地址
 	Miner4     = common.HexToAddress("0x8fe256e9f0816915c10c5b1138d11d8456e0b48f") //矿池矿工为0时的缺省封装地址
-	Miner5     = common.HexToAddress("0x0d98fec287fa8e378032ddf06c72e61e1a42a85f") //矿池矿工为0时的缺省封装地址
+	Miner5     = common.HexToAddress("0x0953b9de3e3480e9953029b3e5db2fbb597722ca") //矿池矿工为0时的缺省封装地址
 
 	BlockProcessingTime  = int(15)                                                           //缺省区块处理时间为15秒
 	AveragyWattingTime   = int(10)                                                           //等待间隔为5秒
