@@ -230,7 +230,7 @@ func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint
 	var Miners []string
 	var candidates []string
 	var opts []ledger.RequestOption
-	opts = append(opts, ledger.WithTargets(Fbc.CurPeers...))
+	opts = append(opts, ledger.WithTargets(Fbc.SelectPeers...))
     for k:=CurNumber;k>PrevNumber;k--{
 	    block, err :=Fbc.LedgerClient.QueryBlock(k,opts...)
 		if err != nil {
@@ -252,7 +252,7 @@ func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint
 }
 func (Fbc *Fbclient)RewardMobileMiners(PrevNumber uint64,CurNumber uint64) (MobMiners[]string,err error) { 
 	var opts []ledger.RequestOption
-	opts = append(opts, ledger.WithTargets(Fbc.CurPeers...))
+	opts = append(opts, ledger.WithTargets(Fbc.SelectPeers...))
 	for k:=CurNumber;k>PrevNumber;k--{
 	    block, err :=Fbc.LedgerClient.QueryBlock(k,opts...)
 	    if err != nil {
@@ -272,7 +272,7 @@ func (Fbc *Fbclient)RewardMobileMiners(PrevNumber uint64,CurNumber uint64) (MobM
 
 func (Fbc *Fbclient)CurfbNumber() (CurNum uint64,err error) { 
 	var opts []ledger.RequestOption
-	opts = append(opts, ledger.WithTargets(Fbc.CurPeers...))
+	opts = append(opts, ledger.WithTargets(Fbc.SelectPeers...))
 	ledgerInfo, err := Fbc.LedgerClient.QueryInfo(opts...)
 	if err != nil {
 			return uint64(0),err
