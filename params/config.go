@@ -41,8 +41,8 @@ var (
 //Unconfirmed_block=make(map[uint64]RegistryBlock)
 //POSMINER相关定义
 var (
-	MinerPool1 = common.HexToAddress("0xf9843cb853440db96fd263d7dc10757e55f78180") //POSMINER合约地址
-	MinerPool2     = common.HexToAddress("0x87a8aa7fd4b28d73bbe45be7aa03b3dbf20a15b8") //矿池矿工为0时的缺省封装地址
+	MinerPool1 = common.HexToAddress("0xeb3074e9ee1499d2c9df33d764dfec6d880f7862") //POSMINER合约地址
+	MinerPool2     = common.HexToAddress("0x5199ce8129a907075da14d8d18e979fdb287668b") //矿池矿工为0时的缺省封装地址
 	MinerPool3     = common.HexToAddress("0x1865b595828e06516d095405f7968c443ab4ce36") //矿池矿工为0时的缺省封装地址
 	MinerPool4     = common.HexToAddress("0xe8801197a8d3ec60d75f2a2076c3b2f74074c6b2") //矿池矿工为0时的缺省封装地址
 	MinerPool5     = common.HexToAddress("0x5bafe044a9c413995c3b2a60aaff15beadb078de") //矿池矿工为0时的缺省封装地址

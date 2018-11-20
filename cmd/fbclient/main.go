@@ -53,9 +53,9 @@ func main() {
 
 	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
 	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,3,params.Miner3.String(),params.MinerPool3.String()) //模拟终端一
-	go clientMine(Fbc,4,params.Miner4.String(),params.MinerPool4.String()) //模拟终端一
-	go clientMine(Fbc,5,params.Miner5.String(),params.MinerPool5.String()) //模拟终端一
+	// go clientMine(Fbc,3,params.Miner3.String(),params.MinerPool3.String()) //模拟终端一
+	// go clientMine(Fbc,4,params.Miner4.String(),params.MinerPool4.String()) //模拟终端一
+	// go clientMine(Fbc,5,params.Miner5.String(),params.MinerPool5.String()) //模拟终端一
     TestMine(Fbc)
 	//CurentMineWiner(Fbc)  //区块生成模拟
 
