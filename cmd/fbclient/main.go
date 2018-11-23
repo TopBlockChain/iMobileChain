@@ -18,11 +18,13 @@
 package main
 
 import (
+	"math/big"
 	"fmt"
 	"time"
 	
 	"github.com/blockchain/imobilechain/fbclient"
-    "github.com/blockchain/imobilechain/params"
+	"github.com/blockchain/imobilechain/params"
+	"github.com/blockchain/imobilechain/common"
 
 )
 const (
@@ -51,78 +53,78 @@ func main() {
 //	curnum,_:=Fbc.CurfbNumber()
 	fmt.Println("allpeers",Fbc.AllPeers,"selectpeers",Fbc.SelectPeers,"currentpeers",Fbc.CurPeers)
 
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
-	go clientMine(Fbc,1,params.Miner1.String(),params.MinerPool1.String()) //模拟终端一
-	go clientMine(Fbc,2,params.Miner2.String(),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(1000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(2000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(3000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(4000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(5000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(6000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(7000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(8000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(9000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(10000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(1100000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(1200000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(1400000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(1500000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(1600000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(1700000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(1800000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(1900000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(10000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(20000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(30000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(40000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(50000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(60000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(70000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(80000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(90000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(100000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(11000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(12000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(14000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(15000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(16000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(17000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(18000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(19000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(11000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(12000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(13000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(14000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(15000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(16000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(17000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(18000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(19000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(110000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(11100000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(11200000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(11400000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(11500000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(11600000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(11700000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(11800000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(11900000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(110000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(120000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(130000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(1140000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(150000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(160000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(170000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(180000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(190000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(1100000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(111000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(112000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(114000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(115000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(116000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(117000000000000000),params.MinerPool1.String()) //模拟终端一
+	go clientMine(Fbc,2,big.NewInt(118000000000000000),params.MinerPool2.String()) //模拟终端一
+	go clientMine(Fbc,1,big.NewInt(119000000000000000),params.MinerPool1.String()) //模拟终端一
 	// go clientMine(Fbc,3,params.Miner3.String(),params.MinerPool3.String()) //模拟终端一
 	// go clientMine(Fbc,4,params.Miner4.String(),params.MinerPool4.String()) //模拟终端一
 	// go clientMine(Fbc,5,params.Miner5.String(),params.MinerPool5.String()) //模拟终端一
@@ -130,19 +132,19 @@ func main() {
 	//CurentMineWiner(Fbc)  //区块生成模拟
 
 }
-func clientMine(fbc *fbclient.Fbclient,num int,user string,miner string){
+func clientMine(fbc *fbclient.Fbclient,num int,user *big.Int,miner string){
 	var i int
 	i=1
-    var addEventArgs = [][]byte{[]byte(user), []byte(miner)}
 	for {
+		user.Add(user,big.NewInt(1))
+		var addEventArgs = [][]byte{[]byte(common.BigToAddress(user).String()), []byte(miner)}
 		err:=fbc.AddMobileMiningEvent(addEventArgs)
 		if err==nil{
 			fmt.Println("--------------------移动矿工挖矿信息---------------------：")
-			fmt.Println("模拟终端：",num,"  挖矿次数",i,"  移动矿工",user,"矿池：",miner,"状态: 成功")	
+			fmt.Println("模拟终端：",num,"  挖矿次数",i,"  移动矿工",common.BigToAddress(user).String(),"矿池：",miner,"状态: 成功")	
 		}else{
 			fmt.Println("挖矿未能成功：",err)
 		}
-
 		i++	
 	}
 }
@@ -166,7 +168,9 @@ func TestMine(fbc *fbclient.Fbclient){
 		fmt.Println("------------------------资产链区块号",i,"-------------------------：")
 		curnum,_:=fbc.CurfbNumber()
 		Miners,_,_:=fbc.CandidateMiners(prevnum,curnum,i)
+		duration:=fbc.WaitTime(Miners,params.MinerPool1.String(),uint64(i))   //计算等待时
 		fmt.Println("------------------------候选矿池账号-------------------------：",curnum)
+		fmt.Println("------------------------等待时间-------------------------：",duration)
 		fmt.Println("CandidateMiners:",Miners)
 		MobileMiners,_:=fbc.RewardMobileMiners(prevnum,curnum)
 		fmt.Println("----------------------待奖励移动矿工账号-------------------------：",curnum)

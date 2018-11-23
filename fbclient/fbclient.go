@@ -223,7 +223,7 @@ func (Fbc *Fbclient)WaitTime(Miners []string, Coinbase string,blocknumber uint64
 		   return Duration  
 	   }
    }
-   Duration = int64(params.BlockProcessingTime + params.AveragyWattingTime*3)+int64(HashNumber(int64(params.AveragyWattingTime),Coinbase+string(blocknumber)))
+   Duration = int64(params.BlockProcessingTime + params.AveragyWattingTime*3)+int64(HashNumber(int64(params.AveragyWattingTime*3),Coinbase+string(blocknumber)))
    return Duration
 }
 func (Fbc *Fbclient)CandidateMiners(PrevNumber uint64,CurNumber uint64,Seed uint64) (Candidates []string, diff int64, err error) { 
