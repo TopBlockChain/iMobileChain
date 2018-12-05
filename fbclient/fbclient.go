@@ -217,8 +217,8 @@ func (Fbc *Fbclient)Str2Adrr(value string)[]string {
 func (Fbc *Fbclient)WaitTime(Miners []string, Coinbase string,blocknumber uint64) (Duration int64) {
 	//var Duration = int64(0)
 	//根据Coinbase在侯选矿工中的位置决定其等待时间
-   for i:=0;i<len(Miners);i++{
-	   if Miners[i]==Coinbase{
+    for i:=0;i<len(Miners);i++{
+	   if strings.ToLower(Miners[i])==strings.ToLower(Coinbase){
 		   Duration = int64(params.BlockProcessingTime+ params.AveragyWattingTime*i)
 		   return Duration  
 	   }
