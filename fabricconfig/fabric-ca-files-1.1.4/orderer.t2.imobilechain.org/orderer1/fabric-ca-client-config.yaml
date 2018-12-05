@@ -1,0 +1,10 @@
+csr:
+  cn: ca.orderer.t2.imobilechain.org
+  names:
+    - C: "CN"
+    - ST: "Sichuan"
+    - L: "Chengdu"
+    - O:
+    - OU:
+  hosts:
+    - orderer1.orderer.t2.imobilechain.org

@@ -1,0 +1,10 @@
+csr:
+  cn: ca.org3.t2.imobilechain.org
+  names:
+    - C: "CN"
+    - ST: "Sichuan"
+    - L: "Chengdu"
+    - O:
+    - OU:
+  hosts:
+    - 
